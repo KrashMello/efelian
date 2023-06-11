@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row>
       <v-col cols="12">
-        <v-card elevation="3">
+        <v-card flat>
           <v-img
             class="card-about-me"
             src="https://wallpaperaccess.com/full/770382.jpg"
@@ -10,45 +10,59 @@
             <v-list-item>
               <v-list-item-content>
                 <v-card-title primary-title class="primary--text">
-                  Un poquito sobre mi
+                  Conoceme
                 </v-card-title>
                 <v-card-text>
                   Hola mundo, mi nombre es joel nacido en venezuela tengo
-                  actualmente {{ new Date().getFullYear() - 1994 }} años de edad
-                  y soy un desarrollador en crecimiento que trata de dar lo
-                  mejor de si dia a dia, con muchos proyectos en mente por hacer
-                  y con muchas ganas de darlo todo por cumplir mis sueños, bueno
-                  aca te estare contando poco a poco sobre mi asi puedes
-                  conocerme un poco mejor.
+                  actualmente {{ new Date().getFullYear() - 1994 }} años de
+                  edad, me desenvuelvo como un desarrollador web en crecimiento
+                  que trata de dar lo mejor de si día a día, con muchos
+                  proyectos en mente por realizar y con muchas ganas de darlo
+                  todo por cumplir mis sueños. Por acá estaré reseñando poco a
+                  poco sobre mi y así podrás seguir conociéndome un poco mejor.
+                  Espero les agrade un montón.
                 </v-card-text>
               </v-list-item-content>
-              <v-list-item-avatar tile size="200" color="grey">
+              <v-list-item-avatar
+                v-if="$vuetify.breakpoint.mdAndUp"
+                tile
+                size="200"
+                color="grey"
+              >
                 <!-- <v-img :src="imgSrc" /> -->
               </v-list-item-avatar>
             </v-list-item>
             <V-divider class="my-5" />
             <v-list-item>
-              <v-list-item-avatar tile size="200" color="grey">
+              <v-list-item-avatar
+                v-if="$vuetify.breakpoint.mdAndUp"
+                tile
+                size="200"
+                color="grey"
+              >
                 <!-- <v-img :src="imgSrc" /> -->
               </v-list-item-avatar>
               <v-list-item-content>
-                <v-card-title primary-title> Que es KrashMello </v-card-title>
+                <v-card-title primary-title> ¿Que es KrashMello? </v-card-title>
                 <v-card-text>
                   <p>
-                    algunas personas que eh conocido me han preguntado alguna
-                    vez que es krashmello o por que elegi ese nombre y la
-                    realidad no es otra que un nombre surgido de las iniciales
-                    KM que estan en el logo, un dia se me vino a la cabeza el
-                    diseño y de alli empeze a buscar combinaciones para el
-                    nombre de alli sale.
+                    algunas personas que he tratado me han realizado la pregunta
+                    de que es krashmello o porque elegí ese nombre y la realidad
+                    no es otra que un nombre surgido de las iniciales
+                    <b>KM</b> que pueden visualizar en el logo, un día tomando
+                    un café se me vino a mis pensamientos el diseño y de allí
+                    empecé a construirlo y buscar combinaciones para el nombre y
+                    me agrado el resultado.
                   </p>
                   <p>
-                    krashmello es una iniciativa de un proyecto que se divide en
-                    varias faces y no un nombre como tal, una de las faces es
-                    poder ayudar al mundo un poco con mis codigos y tambien
-                    mostrarme a mi mismo de lo que soy capaz de lograr, aun
-                    faltan faces por cumplir pero a medida se vayan cumpliendo
-                    ire actualizando.
+                    Cabe destacar que krashmello es una iniciativa de un
+                    proyecto que se divide en varias fases y no un nombre como
+                    tal, una de las fases es poder ayudar en el mundo de los
+                    programadores un poco con mis códigos en pocas palabras “lo
+                    que ya se” una de mis cualidades es que me gusta ayudar y
+                    como también demostrarme a mi mismo de lo que soy capaz de
+                    lograr y hacer, aún me faltan fases por cumplir en mi pero a
+                    medida se vayan cumpliendo los irán conociendo.
                   </p>
                 </v-card-text>
               </v-list-item-content>
@@ -60,48 +74,52 @@
                   Lo que me apaciona
                 </v-card-title>
                 <v-card-text>
-                  me gusta mucho jugar video juegos, aprender cosas nuevas todos
-                  los dias, el comportamiento humano, diseñar aunque en esto no
-                  soy tan bueno creo en realidad que mi parte creativa del
-                  cerebro no funciona tan bien jajaja tambien me gusta
-                  programar, aunque esto es realmente un amor odio ya que
-                  siempre me gusta ponerme retos muy grandes pero al ver que son
-                  demasiado para una persona y que es necesario un equipo de
-                  trabajo me abruma ya que no cuento con ello.
+                  <p>
+                    me gustan los video juegos, aprender cosas nuevas todos los
+                    dias, el comportamiento humano, diseñar aunque en esto no
+                    soy tan bueno creo en realidad que mi parte creativa del
+                    cerebro no funciona tan bien jajaja tambien me gusta
+                    programar como puedo mostrar en esta pagina, aunque esto es
+                    realmente un amor odio ya que siempre suelo ponerme retos
+                    muy grandes que necesitan de un equipo de 2 o mas personas y
+                    al ver que son demasiado para una persona me abruma.
+                  </p>
                 </v-card-text>
               </v-list-item-content>
-              <v-list-item-avatar tile size="200" color="grey">
+              <v-list-item-avatar
+                v-if="$vuetify.breakpoint.mdAndUp"
+                tile
+                size="200"
+                color="grey"
+              >
                 <!-- <v-img :src="imgSrc" /> -->
               </v-list-item-avatar>
             </v-list-item>
             <V-divider class="my-5" />
             <v-list-item>
-              <v-list-item-avatar tile size="200" color="grey">
-                <!-- <v-img :src="imgSrc" /> -->
-              </v-list-item-avatar>
               <v-list-item-content>
                 <v-card-title primary-title> Habilidades </v-card-title>
                 <v-card-text>
                   <p>
-                    en el mundo del desarrollo, creo tener lo que hace falta
-                    para poder empezar esto es la logica ya que creo que sin
-                    esta no se podria programar en ningun lenguaje.
+                    En el mundo del desarrollo web, me siento capaz de tener lo
+                    que hace falta para poder empezar cualquier proyecto o
+                    sistema, cabe mencionar que es la lógica lo que hace que te
+                    sepas desenvolver en cualquier lenguaje de programación a
+                    trabajar ya que sin lógica no se podría programar con éxito
+                    en ningún lenguaje. A continuación les muestro mis niveles
+                    de mis habilidades:
                   </p>
                   <v-row>
-                    <v-col cols="12" md="6">
+                    <v-col cols="12" md="3">
                       <table-skill :title="front.title" :list="front.list" />
                     </v-col>
-                    <v-col cols="12" md="6">
+                    <v-col cols="12" md="3">
                       <table-skill :title="back.title" :list="back.list" />
                     </v-col>
-                    <v-col cols="12" md="12">
+                    <v-col cols="12" md="3">
                       <table-skill :title="bd.title" :list="bd.list" />
                     </v-col>
                   </v-row>
-                  <p class="mt-5">
-                    y bueno por aqui tambien puedes ir a mi github y ver cositas
-                    que eh hecho anteriormente.
-                  </p>
                 </v-card-text>
               </v-list-item-content>
             </v-list-item>
@@ -122,9 +140,6 @@
                   suscipit in facilis quos accusamus amet.
                 </v-card-text>
               </v-list-item-content>
-              <v-list-item-avatar tile size="200" color="grey">
-                <!-- <v-img :src="imgSrc" /> -->
-              </v-list-item-avatar>
             </v-list-item>
           </v-img>
         </v-card>

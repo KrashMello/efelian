@@ -18,7 +18,7 @@
                 :value="item.value"
               ></v-rating>
             </td> -->
-            <td>
+            <!-- <td>
               <v-rating v-model="item.value" length="10" readonly>
                 <template #item="props">
                   <v-icon small :color="props.isFilled ? 'primary' : ''">{{
@@ -26,7 +26,7 @@
                   }}</v-icon>
                 </template>
               </v-rating>
-            </td>
+            </td> -->
           </tr>
         </tbody>
       </template>

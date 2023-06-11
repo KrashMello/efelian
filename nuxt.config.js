@@ -8,7 +8,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      { hid: 'og-title', property: 'og:title', content: 'KrashMello website' },
+      { hid: 'og-desc', property: 'og:description', content: 'soy krashmello y esta es mi web' },
+      { hid: 'og-image', property: 'og:image', content: '/icon.png' },
+      { hid: 'og-url', property: 'og:url', content: 'https://krashmello.github.io' },
+      { hid: 'description', name: 'description', content: 'soy krashmello y esta es mi web' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
