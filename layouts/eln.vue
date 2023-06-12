@@ -7,7 +7,7 @@
           gradient="to top right, rgba(42, 127, 255,.6), rgba(26, 26, 26,.6)"
         ></v-img>
       </template>
-      <v-btn text> KrashMello </v-btn>
+      <v-btn text> Elumian </v-btn>
 
       <v-spacer />
       <!-- <v-toolbar-title>KrashMello</v-toolbar-title> -->
@@ -53,41 +53,22 @@
 </template>
 
 <script>
+import colors from 'vuetify/es5/util/colors'
 export default {
-  name: 'DefaultLayout',
-  data() {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      test: {
-        title: 'Test',
-        to: '/test'
-      },
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+  mounted() {
+    this.$vuetify.theme.dark = true
+    this.$vuetify.theme.themes.dark = {
+      primary: '#ffaaff',
+      accent: colors.grey.darken3,
+      secondary: colors.amber.darken3,
+      info: colors.teal.lighten1,
+      warning: colors.amber.base,
+      error: colors.deepOrange.accent4,
+      success: colors.green.accent3,
+      background: colors.white
     }
-  },
-  methods: {}
+  }
 }
 </script>
 
-<style>
-/* .v-application--wrap > header {
-  height: 20px !important;
-} */
-</style>
+<style lang="scss" scoped></style>

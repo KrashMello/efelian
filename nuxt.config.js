@@ -10,13 +10,25 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'og-type', property: 'og:type', content: 'website' },
       { hid: 'og-title', property: 'og:title', content: 'KrashMello website' },
-      { hid: 'og-desc', property: 'og:description', content: 'soy krashmello y esta es mi web' },
+      {
+        hid: 'og-desc',
+        property: 'og:description',
+        content: 'soy krashmello y esta es mi web'
+      },
       { hid: 'og-image', property: 'og:image', content: '/icon.png' },
-      { hid: 'og-url', property: 'og:url', content: 'https://krashmello.github.io' },
-      { hid: 'description', name: 'description', content: 'soy krashmello y esta es mi web' },
-      { name: 'format-detection', content: 'telephone=no' },
+      {
+        hid: 'og-url',
+        property: 'og:url',
+        content: 'https://krashmello.github.io'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'soy krashmello y esta es mi web'
+      },
+      { name: 'format-detection', content: 'telephone=no' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -33,7 +45,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -41,14 +53,14 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    '@nuxtjs/pwa'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-   axios: {
+  axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     // baseURL: "http://localhost:5000/",
-     baseURL: "https://enfelia-back.onrender.com/",
+    baseURL: 'https://enfelia-back.onrender.com/',
     proxyHeaders: false,
     credentials: false
     // proxy: true,
@@ -65,11 +77,12 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
-    },
+      lang: 'en'
+    }
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
+
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     treeShake: true,
@@ -87,22 +100,22 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          background: colors.grey.darken4,
+          background: colors.grey.darken4
         },
         light: {
-          primary: "#2a7fff",
+          primary: '#2a7fff',
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          background: colors.white,
-        },
-      },
-    },
+          background: colors.white
+        }
+      }
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {}
 }

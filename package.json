@@ -1,5 +1,5 @@
 {
-  "name": "krashmello-website",
+  "name": "krashmello.github.io",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -38,8 +38,5 @@
     "eslint-plugin-vue": "^9.5.1",
     "husky": "^8.0.1",
     "prettier": "^2.7.1"
-  },
-  "extensions": [
-    ".vue"
-  ]
+  }
 }

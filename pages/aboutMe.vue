@@ -13,14 +13,15 @@
                   Conoceme
                 </v-card-title>
                 <v-card-text>
-                  Hola mundo, mi nombre es joel nacido en venezuela tengo
-                  actualmente {{ new Date().getFullYear() - 1994 }} años de
-                  edad, me desenvuelvo como un desarrollador web en crecimiento
-                  que trata de dar lo mejor de si día a día, con muchos
-                  proyectos en mente por realizar y con muchas ganas de darlo
-                  todo por cumplir mis sueños. Por acá estaré reseñando poco a
-                  poco sobre mi y así podrás seguir conociéndome un poco mejor.
-                  Espero les agrade un montón.
+                  Hola mundo, mi nombre es <b>Joel Enrique</b> nacido en
+                  venezuela tengo actualmente
+                  {{ new Date().getFullYear() - 1994 }} años de edad, me
+                  desenvuelvo como un desarrollador web en crecimiento que trata
+                  de dar lo mejor de si día a día, con muchos proyectos en mente
+                  por realizar y con muchas ganas de darlo todo por cumplir mis
+                  sueños. Por acá estaré reseñando poco a poco sobre mi y así
+                  podrás seguir conociéndome un poco mejor. Espero les agrade un
+                  montón.
                 </v-card-text>
               </v-list-item-content>
               <v-list-item-avatar
@@ -127,17 +128,105 @@
             <v-list-item>
               <v-list-item-content>
                 <v-card-title primary-title class="primary--text">
-                  una noche de fantasia
+                  Estudios
                 </v-card-title>
                 <v-card-text>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio in corporis pariatur alias, dolore aperiam soluta hic
-                  dicta laudantium deserunt architecto inventore corrupti
-                  dolorem quis nobis facere, repellendus dolorum amet! Lorem
-                  ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-                  pariatur ad ipsum ipsa consequatur blanditiis obcaecati, iure
-                  optio eos voluptatum, necessitatibus vitae quia nostrum
-                  suscipit in facilis quos accusamus amet.
+                  <p>
+                    mis inicio de la educacion empezo en una pequeña escuelita
+                    cerca de casa donde culmine la educacion primaria, al
+                    finalizarla sin perdida de tiempo empeze la secundaria
+                    (bachillerato) donde me compraron mi primera pc para poder
+                    hacer los trabajos y poder investigar, esto ayudo a lo que
+                    seria la eleccion de mi carrera universitaria sabia lo que
+                    queria y es estudiar algo relacionado a la tegnologia en
+                    esos momentos tambien usaba la computadora para jugar y el
+                    querer saber como se creaban los videojuegos y tambien
+                    algunos programas de la pc me hicieron ver que lo que
+                    necesitaba estudiar era ingenieria en informatica y al
+                    graduarme del bachillerato de una vez decido buscar algun
+                    ente universitario donde esta carrera se ejersa, fue una tia
+                    que me consiguio un cupo en una la <b>UNEFA</b> una
+                    universidad publica de venezuela donde pase 7 años de mi
+                    vida peleando con mi yo perezoso y procrastinador para poder
+                    terminarla.
+                  </p>
+                  <p>
+                    en los inicios de la universidad sentia que para que servian
+                    las matematias la fisica la quimica y muchas de las materias
+                    que ayi se inpartian, un dia eso se lo dije a un profesor y
+                    el con total seguridad en su respuesta me dijo. <br /><br />
+
+                    <em style="background-color: #e0e0e0">
+                      '' si lo que quieres ser es un ingeniero de sistema tienes
+                      que saber de todo esto y me dio un ejemplo que a dia de
+                      hoy lo tengo presente, sabes como funciona tu cuerpo
+                      internamente sabes como se llama todo lo el conjunto que
+                      forma tu cuerpo internamente, se le llama sistema y
+                      funciona como tal ''
+                    </em>
+                    <br /><br />
+
+                    en el futuro lo que tu diseñaras sera un sistema y en el
+                    puede estar presente las matematicas la biologia la fisica y
+                    demas.
+                  </p>
+                  <p>
+                    fue ahi cuando realmente me intereze mas por el todo y el
+                    por que ocurren las cosas cada vez me interezaban mas llegar
+                    al punto de poder crear cosas yo con programacion, y de alli
+                    fui investigando por mi propia cuenta lo que me hacia falta
+                    para poder comprender mas la programacion.
+                  </p>
+                </v-card-text>
+              </v-list-item-content>
+            </v-list-item>
+            <V-divider class="my-5" />
+            <v-list-item>
+              <v-list-item-content>
+                <v-card-title primary-title class="primary--text">
+                  Experiencia laboral
+                </v-card-title>
+                <v-card-text>
+                  <p>
+                    mis inicio de la educacion empezo en una pequeña escuelita
+                    cerca de casa donde culmine la educacion primaria, al
+                    finalizarla sin perdida de tiempo empeze la secundaria
+                    (bachillerato) donde me compraron mi primera pc para poder
+                    hacer los trabajos y poder investigar, esto ayudo a lo que
+                    seria la eleccion de mi carrera universitaria sabia lo que
+                    queria y es estudiar algo relacionado a la tegnologia en
+                    esos momentos tambien usaba la computadora para jugar y el
+                    querer saber como se creaban los videojuegos y tambien
+                    algunos programas de la pc me hicieron ver que lo que
+                    necesitaba estudiar era ingenieria en informatica y al
+                    graduarme del bachillerato de una vez decido buscar algun
+                    ente universitario donde esta carrera se ejersa, fue una tia
+                    que me consiguio un cupo en una la <b>UNEFA</b> una
+                    universidad publica de venezuela donde pase 7 años de mi
+                    vida peleando con mi yo perezoso y procrastinador para poder
+                    terminarla.
+                  </p>
+                  <p>
+                    en los inicios de la universidad sentia que para que servian
+                    las matematias la fisica la quimica y muchas de las materias
+                    que ayi se inpartian, un dia eso se lo dije a un profesor y
+                    el con total seguridad en su respuesta me dijo si lo que
+                    quieres ser es un ingeniero de sistema tienes que saber de
+                    todo esto y me dio un ejemplo que a dia de hoy lo tengo
+                    presente, sabes como funciona tu cuerpo internamente sabes
+                    como se llama todo lo el conjunto que forma tu cuerpo
+                    internamente, se le llama sistema y funciona como tal en el
+                    futuro lo que tu diseñaras sera un sistema y en el puede
+                    estar presente las matematicas la biologia la fisica y
+                    demas.
+                  </p>
+                  <p>
+                    fue ahi cuando realmente me intereze mas por el todo y el
+                    por que ocurren las cosas cada vez me interezaban mas llegar
+                    al punto de poder crear cosas yo con programacion, y de alli
+                    fui investigando por mi propia cuenta lo que me hacia falta
+                    para poder comprender mas la programacion.
+                  </p>
                 </v-card-text>
               </v-list-item-content>
             </v-list-item>
@@ -153,6 +242,7 @@ export default {
   name: 'AboutMePage',
   data() {
     return {
+      title: 'Sobre Mi',
       front: {
         title: 'Front End',
         list: [
@@ -209,6 +299,9 @@ export default {
         ]
       }
     }
+  },
+  head() {
+    return { title: this.title }
   }
 }
 </script>
