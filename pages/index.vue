@@ -1,94 +1,65 @@
 <template>
-  <v-row>
-    <v-col cols="12" sm="8" md="8">
-      <notice-card
-        v-for="(item, i) in notices"
-        :key="i"
-        :title="item.title"
-        :card-class="item.class"
-        :description="item.description"
-        :img-src="item.imgSrc"
-        :create-at="item.createAt"
-      />
+  <v-row justify="center" class="mt-5">
+    <v-col style="height: 384px" align-self="center" cols="12">
+      <div class="titlele font-weight-black">hola Mundo!</div>
+      <v-scroll-x-transition>
+        <div
+          v-if="transitionItems"
+          class="titlele font-weight-black"
+          v-html="$sanitize(items[counter])"
+        ></div>
+      </v-scroll-x-transition>
     </v-col>
-    <v-col cols="12" sm="4" md="4">
-      <v-container fluid>
-        <v-row>
-          <v-col cols="12">
-            <v-toolbar color="primary" dark rounded="">
-              <v-toolbar-title>Noticias Destacadas</v-toolbar-title>
-            </v-toolbar>
-          </v-col>
-          <v-col cols="12">
-            <v-card class="rounded-xl">
-              <v-list-item>
-                <v-list-item-avatar tile size="75" color="grey">
-                  <v-img src="https://picsum.photos/500/300?random" />
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-Subtitle-2 mb-1">
-                    👨‍🦽 ayer se cayo pedrito 👨‍🦽
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="primary--text"
-                    >seguir leyendo</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
+
+    <v-col cols="12">
+      <v-row>
+        <v-hover v-model="card1Hover">
+          <v-col :cols="card1Col" class="px-0">
+            <v-card height="766" :class="{ 'on-hover': card1Hover }"
+>
+              <v-expand-x-transition>
+                <div
+                  v-if="!card1Hover"
+                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
+                  style="height: 100%"
+                >
+                  {{ card1Hover }}
+                </div>
+              </v-expand-x-transition>
             </v-card>
           </v-col>
-          <v-col cols="12">
-            <v-card class="rounded-xl">
-              <v-list-item>
-                <v-list-item-avatar tile size="75" color="grey">
-                  <v-img src="https://picsum.photos/500/300?random" />
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-Subtitle-2 mb-1">
-                    🎾 buena jornada para nadal
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="primary--text"
-                    >seguir leyendo</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
+        </v-hover>
+        <v-hover v-model="card2Hover">
+          <v-col :cols="card2Col" class="px-0">
+            <v-card height="766" :class="{ 'on-hover': card2Hover }">
+              <v-expand-x-transition>
+                <div
+                  v-if="!card2Hover"
+                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
+                  style="height: 100%"
+                >
+                  {{ card2Hover }}
+                </div>
+              </v-expand-x-transition>
             </v-card>
           </v-col>
-          <v-col cols="12">
-            <v-card class="rounded-xl">
-              <v-list-item>
-                <v-list-item-avatar tile size="75" color="grey">
-                  <v-img src="https://picsum.photos/500/300?random" />
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-Subtitle-2 mb-1">
-                    🍒las cerezas estan baratas
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="primary--text"
-                    >seguir leyendo</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
+        </v-hover>
+        <v-hover v-model="card3Hover">
+          <v-col :cols="card3Col" class="px-0">
+            <v-card color="primary" height="766" :class="{ 'on-hover': card3Hover }">
+              <v-expand-x-transition>
+                <div
+                  v-if="!card3Hover"
+                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
+                  style="height: 100%"
+                >
+                  {{ card3Hover }}
+                </div>
+              </v-expand-x-transition>
             </v-card>
           </v-col>
-          <v-col cols="12">
-            <v-card class="rounded-xl">
-              <v-list-item>
-                <v-list-item-avatar tile size="75" color="grey">
-                  <v-img src="https://picsum.photos/500/300?random" />
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-Subtitle-2 mb-1">
-                    👨‍🦽 ayer se cayo pedrito 👨‍🦽
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="primary--text"
-                    >seguir leyendo</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
+        </v-hover>
+      </v-row>
     </v-col>
   </v-row>
 </template>
@@ -98,19 +69,95 @@ export default {
   name: 'IndexPage',
   data() {
     return {
+      card1Hover: false,
+      card2Hover: false,
+      card3Hover: false,
+      card1Col: 4,
+      card2Col: 4,
+      card3Col: 4,
       title: 'Inicio',
-      notices: [],
+      items: [
+        `Mi nombre es <span class="primary--text">joel</span>`,
+        `un <span class="primary--text">Desarollador</span>`,
+        `un <span class="primary--text">Soñador</span>`,
+        `un <span class="primary--text">humano</span>`
+      ],
+      counter: 0,
+      transitionItems: false
     }
   },
   head() {
     return {
-      title: this.title,
+      title: this.title
+    }
+  },
+  watch: {
+    card1Hover(val) {
+      if (val) {
+        this.card1Col = 6
+        this.card2Col = 3
+        this.card3Col = 3
+      } else {
+        this.card1Col = 4
+        this.card2Col = 4
+        this.card3Col = 4
+      }
+    },
+    card2Hover(val) {
+      if (val) {
+        this.card1Col = 3
+        this.card2Col = 6
+        this.card3Col = 3
+      } else {
+        this.card1Col = 4
+        this.card2Col = 4
+        this.card3Col = 4
+      }
+    },
+    card3Hover(val) {
+      if (val) {
+        this.card1Col = 3
+        this.card2Col = 3
+        this.card3Col = 6
+      } else {
+        this.card1Col = 4
+        this.card2Col = 4
+        this.card3Col = 4
+      }
     }
   },
   mounted() {
-    this.$axios.get('/').then((resp) => {
-      this.notices = resp.data.notices
-    })
+    this.transitionItems = true
+    setTimeout(() => {
+      this.transitionItems = false
+    }, 4500)
+
+    setInterval(() => {
+      this.transitionItems = true
+      if (this.counter >= this.items.length - 1) this.counter = 0
+      else this.counter++
+      setTimeout(() => {
+        this.transitionItems = false
+      }, 4500)
+    }, 5000)
   },
+  methods: {
+    timer() {
+      this.counter++
+    },
+    $sanitize(html) {
+      return html
+    }
+  }
 }
 </script>
+<style>
+.titlele {
+  font-size: 4em;
+  letter-spacing: 0.2rem;
+}
+.v-card:not(.on-hover) { opacity: 0.6; }
+.v-card { transition: opacity .4s ease-in-out; }
+
+
+</style>
