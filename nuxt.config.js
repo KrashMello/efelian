@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+// import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -13,22 +13,22 @@ export default {
       {
         hid: 'og-desc',
         property: 'og:description',
-        content: 'soy krashmello y esta es mi web'
+        content: 'soy krashmello y esta es mi web',
       },
       { hid: 'og-image', property: 'og:image', content: '/icon.png' },
       {
         hid: 'og-url',
         property: 'og:url',
-        content: 'https://krashmello.github.io'
+        content: 'https://krashmello.github.io',
       },
       {
         hid: 'description',
         name: 'description',
-        content: 'soy krashmello y esta es mi web'
+        content: 'soy krashmello y esta es mi web',
       },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -45,7 +45,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -53,7 +53,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -62,7 +62,7 @@ export default {
     // baseURL: "http://localhost:5000/",
     baseURL: 'https://enfelia-back.onrender.com/',
     proxyHeaders: false,
-    credentials: false
+    credentials: false,
     // proxy: true,
   },
   // proxy: {
@@ -77,8 +77,8 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
-    }
+      lang: 'en',
+    },
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -88,34 +88,74 @@ export default {
     treeShake: true,
     theme: {
       options: {
-        customProperties: true
+        customProperties: true,
       },
       dark: false,
       themes: {
         dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-          background: colors.grey.darken4
+          primary: '#88C0D0',
+          textPrimary: '#434C5E',
+          textAccent: '#4C566A',
+          accent: '#5E81AC',
+          secondary: '#81A1C1',
+          info: '#EBCB8B',
+          warning: '#D08770',
+          error: '#BF616A',
+          success: '#A3BE8C',
+          background: '#2E3440',
+          nord0: '#2E3440',
+          nord1: '#3B4252',
+          nord2: '#434C5E',
+          nord3: '#4C566A',
+          nord4: '#D8DEE9',
+          nord5: '#E5E9F0',
+          nord6: '#ECEFF4',
+          nord7: '#8FBCBB',
+          nord8: '#88C0D0',
+          nord9: '#81A1C1',
+          nord10: '#5E81AC',
+          nord11: '#BF616A',
+          nord12: '#D08770',
+          nord13: '#EBCB8B',
+          nord14: '#A3BE8C',
+          nord15: '#B48EAD',
         },
         light: {
-          primary: '#2a7fff',
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-          background: colors.white
-        }
-      }
-    }
+          primary: '#88C0D0',
+          textPrimary: '#434C5E',
+          textAccent: '#4C566A',
+          accent: '#D8DEE9',
+          secondary: '#81A1C1',
+          info: '#EBCB8B',
+          warning: '#D08770',
+          error: '#BF616A',
+          success: '#A3BE8C',
+          background: '#ECEFF4',
+          nord0: '#2E3440',
+          nord1: '#3B4252',
+          nord2: '#434C5E',
+          nord3: '#4C566A',
+          nord4: '#D8DEE9',
+          nord5: '#E5E9F0',
+          nord6: '#ECEFF4',
+          nord7: '#8FBCBB',
+          nord8: '#88C0D0',
+          nord9: '#81A1C1',
+          nord10: '#5E81AC',
+          nord11: '#BF616A',
+          nord12: '#D08770',
+          nord13: '#EBCB8B',
+          nord14: '#A3BE8C',
+          nord15: '#B48EAD',
+        },
+      },
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  server: {
+    host: '130.11.0.50',
+    port: 3000,
+  },
 }

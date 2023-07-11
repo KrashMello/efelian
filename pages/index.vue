@@ -1,67 +1,51 @@
 <template>
-  <v-row justify="center" class="mt-5">
-    <v-col style="height: 384px" align-self="center" cols="12">
-      <div class="titlele font-weight-black">hola Mundo!</div>
-      <v-scroll-x-transition>
-        <div
-          v-if="transitionItems"
-          class="titlele font-weight-black"
-          v-html="$sanitize(items[counter])"
-        ></div>
-      </v-scroll-x-transition>
-    </v-col>
-
-    <v-col cols="12">
-      <v-row>
-        <v-hover v-model="card1Hover">
-          <v-col :cols="card1Col" class="px-0">
-            <v-card height="766" :class="{ 'on-hover': card1Hover }"
->
-              <v-expand-x-transition>
-                <div
-                  v-if="!card1Hover"
-                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
-                  style="height: 100%"
-                >
-                  {{ card1Hover }}
-                </div>
-              </v-expand-x-transition>
-            </v-card>
-          </v-col>
-        </v-hover>
-        <v-hover v-model="card2Hover">
-          <v-col :cols="card2Col" class="px-0">
-            <v-card height="766" :class="{ 'on-hover': card2Hover }">
-              <v-expand-x-transition>
-                <div
-                  v-if="!card2Hover"
-                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
-                  style="height: 100%"
-                >
-                  {{ card2Hover }}
-                </div>
-              </v-expand-x-transition>
-            </v-card>
-          </v-col>
-        </v-hover>
-        <v-hover v-model="card3Hover">
-          <v-col :cols="card3Col" class="px-0">
-            <v-card color="primary" height="766" :class="{ 'on-hover': card3Hover }">
-              <v-expand-x-transition>
-                <div
-                  v-if="!card3Hover"
-                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
-                  style="height: 100%"
-                >
-                  {{ card3Hover }}
-                </div>
-              </v-expand-x-transition>
-            </v-card>
-          </v-col>
-        </v-hover>
-      </v-row>
-    </v-col>
-  </v-row>
+  <v-container>
+    <v-row justify="center" class="mt-5">
+      <v-col style="height: 384px" cols="12">
+        <div class="titlele font-weight-black">MI NOMBRE ES JOEL</div>
+        <div style="min-height: 56px">
+          <v-scroll-x-transition>
+            <div v-if="transitionItems" class="titlele-2 font-weight-black">
+              un <span class="nord8--text"> {{ items[counter] }} </span>
+            </div>
+          </v-scroll-x-transition>
+        </div>
+        <p class="subtitle-h mt-3">
+          Me gusta desarrollar herramientas para el uso y beneficios de muchos
+        </p>
+      </v-col>
+    </v-row>
+    <v-row class="mt-3">
+      <v-col cols="12">
+        <h1>
+          <strong> Biografia </strong>
+        </h1>
+        <v-simple-table style="background-color: rgba(0, 0, 0, 0)">
+          <template #default>
+            <tbody>
+              <tr v-for="(bio, i) in bioList" :key="i">
+                <td class="nord0--text">
+                  <strong> {{ bio.date }} </strong>
+                </td>
+                <td class="nord1--text">{{ bio.description }}</td>
+              </tr>
+            </tbody>
+          </template>
+        </v-simple-table>
+      </v-col>
+    </v-row>
+    <v-row class="mt-3">
+      <v-col cols="12">
+        <h1>
+          <strong> Amo </strong>
+        </h1>
+        <p>
+          Desarrollar Aplicativos, Buscar Informacion, la Fotografia, Musica, el
+          Arte
+        </p>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -69,69 +53,39 @@ export default {
   name: 'IndexPage',
   data() {
     return {
-      card1Hover: false,
-      card2Hover: false,
-      card3Hover: false,
-      card1Col: 4,
-      card2Col: 4,
-      card3Col: 4,
       title: 'Inicio',
-      items: [
-        `Mi nombre es <span class="primary--text">joel</span>`,
-        `un <span class="primary--text">Desarollador</span>`,
-        `un <span class="primary--text">Soñador</span>`,
-        `un <span class="primary--text">humano</span>`
+      items: [`Desarollador`, `Soñador`, `Humano`],
+      bioList: [
+        { date: '1994', description: 'Naci en Cabudare-Lara, Venezuela' },
+        {
+          date: '2019',
+          description:
+            'Culmino mi carrera de ingenieria en sistema en la Universidad Experimental Politecnica de las fuerzas Armadas (UNEFA)',
+        },
+        {
+          date: '2019-2021',
+          description:
+            'Trabaje en la empreza Lacteos Los Andes como Desarrollador de Aplicaciones',
+        },
+        {
+          date: '2022-presente',
+          description:
+            'Trabajo en la alcaldia de iribarren como Desarrollador de Aplicaciones',
+        },
       ],
       counter: 0,
-      transitionItems: false
+      transitionItems: true,
     }
   },
   head() {
     return {
-      title: this.title
-    }
-  },
-  watch: {
-    card1Hover(val) {
-      if (val) {
-        this.card1Col = 6
-        this.card2Col = 3
-        this.card3Col = 3
-      } else {
-        this.card1Col = 4
-        this.card2Col = 4
-        this.card3Col = 4
-      }
-    },
-    card2Hover(val) {
-      if (val) {
-        this.card1Col = 3
-        this.card2Col = 6
-        this.card3Col = 3
-      } else {
-        this.card1Col = 4
-        this.card2Col = 4
-        this.card3Col = 4
-      }
-    },
-    card3Hover(val) {
-      if (val) {
-        this.card1Col = 3
-        this.card2Col = 3
-        this.card3Col = 6
-      } else {
-        this.card1Col = 4
-        this.card2Col = 4
-        this.card3Col = 4
-      }
+      title: this.title,
     }
   },
   mounted() {
-    this.transitionItems = true
     setTimeout(() => {
       this.transitionItems = false
     }, 4500)
-
     setInterval(() => {
       this.transitionItems = true
       if (this.counter >= this.items.length - 1) this.counter = 0
@@ -147,17 +101,23 @@ export default {
     },
     $sanitize(html) {
       return html
-    }
-  }
+    },
+  },
 }
 </script>
 <style>
 .titlele {
-  font-size: 4em;
+  font-size: 3rem;
   letter-spacing: 0.2rem;
 }
-.v-card:not(.on-hover) { opacity: 0.6; }
-.v-card { transition: opacity .4s ease-in-out; }
+.titlele-2 {
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+}
 
-
+.subtitle-h {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  max-width: 20em;
+}
 </style>

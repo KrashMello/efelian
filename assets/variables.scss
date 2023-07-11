@@ -3,6 +3,11 @@
 // The variables you want to modify
 // $font-size-root: 20px;
 @import '~vuetify/src/styles/styles.sass';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import "/node_modules/nord/src/sass/nord.scss";
+
+$body-font-family: "Ubuntu";
+
 $material-light: map-merge(
   $material-light,
   (
@@ -23,3 +28,63 @@ $material-dark: map-merge(
       )
   )
 );
+.textPrimary--text {
+  color: "#434C5E"
+};
+.textAccent--text {
+  color: "#4C566A"
+};
+.justify-space-evenly{
+  justify-content: space-evenly;
+}
+
+
+.nord0--text{
+  color: $nord0 !important
+}
+.nord1--text{
+  color: $nord1 !important
+}
+.nord2--text{
+  color: $nord2 !important
+}
+.nord3--text{
+  color: $nord3 !important
+}
+.nord4--text{
+  color: $nord4 !important
+}
+.nord5--text{
+  color: $nord5 !important
+}
+.nord6--text{
+  color: $nord6 !important
+}
+.nord7--text{
+  color: $nord7 !important
+}
+.nord8--text{
+  color: $nord8 !important
+}
+.nord9--text{
+  color: $nord9 !important
+}
+.nord10--text{
+  color: $nord10 !important
+}
+.nord11--text{
+  color: $nord11 !important
+}
+.nord12--text{
+  color: $nord12 !important
+}
+.nord13--text{
+  color: $nord13 !important
+}
+.nord14--text{
+  color: $nord14 !important
+}
+.nord15--text{
+  color: $nord15 !important
+}
+
