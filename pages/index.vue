@@ -18,7 +18,7 @@
     <v-row class="mt-3">
       <v-col cols="12">
         <h1>
-          <strong> Biografia </strong>
+          <strong> Bíografia </strong>
         </h1>
         <v-simple-table style="background-color: rgba(0, 0, 0, 0)">
           <template #default>
@@ -37,11 +37,11 @@
     <v-row class="mt-3">
       <v-col cols="12">
         <h1>
-          <strong> Amo </strong>
+          <strong> Lo que Amo </strong>
         </h1>
         <p>
-          Desarrollar Aplicativos, Buscar Informacion, la Fotografia, Musica, el
-          Arte
+          Desarrollar Aplicativos, Buscar Información, la Fotografía, Música y
+          el Arte
         </p>
       </v-col>
     </v-row>
@@ -53,24 +53,24 @@ export default {
   name: 'IndexPage',
   data() {
     return {
-      title: 'Inicio',
-      items: [`Desarollador`, `Soñador`, `Humano`],
+      title: 'Inició',
+      items: [`Desarollador`, `Soñador`, `Ser Humano`],
       bioList: [
-        { date: '1994', description: 'Naci en Cabudare-Lara, Venezuela' },
+        { date: '1994', description: 'Nací en Cabudare Edo. Lara, Venezuela' },
         {
           date: '2019',
           description:
-            'Culmino mi carrera de ingenieria en sistema en la Universidad Experimental Politecnica de las fuerzas Armadas (UNEFA)',
+            'Culminó mi carrera de ingeniería en sistema en la Universidad Experimental Politécnica de las fuerzas Armadas (UNEFA)',
         },
         {
           date: '2019-2021',
           description:
-            'Trabaje en la empreza Lacteos Los Andes como Desarrollador de Aplicaciones',
+            'Trabaje en la empresa Lácteos Los Andes como Desarrollador de Aplicaciones',
         },
         {
           date: '2022-presente',
           description:
-            'Trabajo en la alcaldia de iribarren como Desarrollador de Aplicaciones',
+            'Trabajo en la Alcaldía de Iribarren como Desarrollador de Aplicaciones',
         },
       ],
       counter: 0,

@@ -3,7 +3,7 @@
     <layout-navbar />
     <v-navigation-drawer
       v-model="drawer"
-      absolute
+      fixed
       temporary
       color="nord0"
       @input="changeDrawer"

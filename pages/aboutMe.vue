@@ -12,7 +12,7 @@
               <v-card-title primary-title class="nord0--text">
                 <strong> Conoceme </strong>
               </v-card-title>
-              <v-card-text class="textAncent--text">
+              <v-card-text class="textAncent--text text-justify">
                 Hola mundo, mi nombre es <b>Joel Enrique</b> nacido en venezuela
                 tengo actualmente {{ new Date().getFullYear() - 1994 }} años de
                 edad, me desenvuelvo como un desarrollador web en crecimiento
@@ -44,11 +44,11 @@
             </v-list-item-avatar>
             <v-list-item-content>
               <v-card-title primary-title class="nord0--text">
-                <strong> ¿Que es KrashMello? </strong>
+                <strong> ¿Qué es KrashMello? </strong>
               </v-card-title>
               <v-card-text>
-                <p class="nord0--text">
-                  algunas personas que he tratado me han realizado la pregunta
+                <p class="nord0--text text-justify">
+                  Algunas personas que he tratado me han realizado la pregunta
                   de que es krashmello o porque elegí ese nombre y la realidad
                   no es otra que un nombre surgido de las iniciales
                   <b>KM</b> que pueden visualizar en el logo, un día tomando un
@@ -56,7 +56,7 @@
                   a construirlo y buscar combinaciones para el nombre y me
                   agrado el resultado.
                 </p>
-                <p class="nord0--text">
+                <p class="nord0--text text-justify">
                   Cabe destacar que krashmello es una iniciativa de un proyecto
                   que se divide en varias fases y no un nombre como tal, una de
                   las fases es poder ayudar en el mundo de los programadores un
@@ -73,11 +73,11 @@
           <v-list-item>
             <v-list-item-content>
               <v-card-title primary-title class="nord0--text">
-                <strong> Lo que me apaciona </strong>
+                <strong> Lo que me apasiona </strong>
               </v-card-title>
               <v-card-text>
-                <p class="nord0--text">
-                  me gustan los video juegos, aprender cosas nuevas todos los
+                <p class="nord0--text text-justify">
+                  Me gustan los video juegos, aprender cosas nuevas todos los
                   dias, el comportamiento humano, diseñar aunque en esto no soy
                   tan bueno creo en realidad que mi parte creativa del cerebro
                   no funciona tan bien jajaja tambien me gusta programar como
@@ -132,8 +132,8 @@
                 <strong> Estudios </strong>
               </v-card-title>
               <v-card-text>
-                <p class="nord0--text">
-                  mis inicio de la educacion empezo en una pequeña escuelita
+                <p class="nord0--text text-justify">
+                  Mis inicio de la educación empezo en una pequeña escuelita
                   cerca de casa donde culmine la educacion primaria, al
                   finalizarla sin perdida de tiempo empeze la secundaria
                   (bachillerato) donde me compraron mi primera pc para poder
@@ -150,14 +150,14 @@
                   venezuela donde pase 7 años de mi vida peleando con mi yo
                   perezoso y procrastinador para poder terminarla.
                 </p>
-                <p class="nord0--text">
-                  en los inicios de la universidad sentia que para que servian
+                <p class="nord0--text text-justify">
+                  En los inicios de la universidad sentia que para que servian
                   las matematias la fisica la quimica y muchas de las materias
                   que ayi se inpartian, un dia eso se lo dije a un profesor y el
                   con total seguridad en su respuesta me dijo. <br /><br />
 
                   <em style="background-color: #e0e0e0">
-                    '' si lo que quieres ser es un ingeniero de sistema tienes
+                    '' Si lo que quieres ser es un ingeniero de sistema tienes
                     que saber de todo esto y me dio un ejemplo que a dia de hoy
                     lo tengo presente, sabes como funciona tu cuerpo
                     internamente sabes como se llama todo lo el conjunto que
@@ -166,11 +166,11 @@
                   </em>
                   <br /><br />
 
-                  en el futuro lo que tu diseñaras sera un sistema y en el puede
+                  En el futuro lo que tu diseñaras sera un sistema y en el puede
                   estar presente las matematicas la biologia la fisica y demas.
                 </p>
-                <p class="nord0--text">
-                  fue ahi cuando realmente me intereze mas por el todo y el por
+                <p class="nord0--text text-justify">
+                  Fue ahi cuando realmente me intereze mas por el todo y el por
                   que ocurren las cosas cada vez me interezaban mas llegar al
                   punto de poder crear cosas yo con programacion, y de alli fui
                   investigando por mi propia cuenta lo que me hacia falta para
@@ -186,8 +186,8 @@
                 <strong> Experiencia laboral </strong>
               </v-card-title>
               <v-card-text>
-                <p class="nord0--text">
-                  mis inicio de la educacion empezo en una pequeña escuelita
+                <p class="nord0--text text-justify">
+                  Mis inicio de la educacion empezo en una pequeña escuelita
                   cerca de casa donde culmine la educacion primaria, al
                   finalizarla sin perdida de tiempo empeze la secundaria
                   (bachillerato) donde me compraron mi primera pc para poder
@@ -204,8 +204,8 @@
                   venezuela donde pase 7 años de mi vida peleando con mi yo
                   perezoso y procrastinador para poder terminarla.
                 </p>
-                <p class="nord0--text">
-                  en los inicios de la universidad sentia que para que servian
+                <p class="nord0--text text-justify">
+                  En los inicios de la universidad sentia que para que servian
                   las matematias la fisica la quimica y muchas de las materias
                   que ayi se inpartian, un dia eso se lo dije a un profesor y el
                   con total seguridad en su respuesta me dijo si lo que quieres
@@ -217,8 +217,8 @@
                   sera un sistema y en el puede estar presente las matematicas
                   la biologia la fisica y demas.
                 </p>
-                <p class="nord0--text">
-                  fue ahi cuando realmente me intereze mas por el todo y el por
+                <p class="nord0--text text-justify">
+                  Fue ahi cuando realmente me intereze mas por el todo y el por
                   que ocurren las cosas cada vez me interezaban mas llegar al
                   punto de poder crear cosas yo con programacion, y de alli fui
                   investigando por mi propia cuenta lo que me hacia falta para
