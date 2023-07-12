@@ -21,73 +21,11 @@
               </v-toolbar-title>
             </v-toolbar>
           </v-col>
-          <v-col cols="12">
-            <v-card color="nord1" class="rounded-xl">
-              <v-list-item>
-                <v-list-item-avatar tile size="75" color="grey">
-                  <v-img src="https://picsum.photos/500/300?random" />
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-Subtitle-2 nord7--text mb-1">
-                    👨‍🦽 ayer se cayo pedrito 👨‍🦽
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="nord8--text"
-                    >seguir leyendo</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
-            </v-card>
-          </v-col>
-          <v-col cols="12">
-            <v-card class="rounded-xl">
-              <v-list-item>
-                <v-list-item-avatar tile size="75" color="grey">
-                  <v-img src="https://picsum.photos/500/300?random" />
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-Subtitle-2 mb-1">
-                    🎾 buena jornada para nadal
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="primary--text"
-                    >seguir leyendo</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
-            </v-card>
-          </v-col>
-          <v-col cols="12">
-            <v-card class="rounded-xl">
-              <v-list-item>
-                <v-list-item-avatar tile size="75" color="grey">
-                  <v-img src="https://picsum.photos/500/300?random" />
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-Subtitle-2 mb-1">
-                    🍒las cerezas estan baratas
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="primary--text"
-                    >seguir leyendo</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
-            </v-card>
-          </v-col>
-          <v-col cols="12">
-            <v-card class="rounded-xl">
-              <v-list-item>
-                <v-list-item-avatar tile size="75" color="grey">
-                  <v-img src="https://picsum.photos/500/300?random" />
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-Subtitle-2 mb-1">
-                    👨‍🦽 ayer se cayo pedrito 👨‍🦽
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="primary--text"
-                    >seguir leyendo</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
-            </v-card>
+          <v-col v-for="i in 4" :key="i" cols="12">
+            <notice-short-card
+              :title="`noticia n° ${i}`"
+              imgSrc="https://picsum.photos/500/300?random"
+            />
           </v-col>
         </v-row>
       </v-container>
@@ -110,9 +48,9 @@ export default {
     }
   },
   mounted() {
-    // this.$axios.get('/').then((resp) => {
-    //   this.notices = resp.data.notices
-    // })
+    this.$axios.get('/').then((resp) => {
+      this.notices = resp.data.notices
+    })
   },
 }
 </script>

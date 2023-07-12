@@ -1,14 +1,14 @@
 <template>
-  <v-card :class="cardClass" color="light-blue lighten-4" class="rounded-xl">
+  <v-card :class="cardClass" color="nord2" class="rounded-xl">
     <v-list-item>
       <v-list-item-avatar tile size="75" class="rounded-tl-xl" color="grey">
         <v-img :src="imgSrc" />
       </v-list-item-avatar>
       <v-list-item-content>
-        <v-list-item-title class="text-h5 mb-1">
+        <v-list-item-title class="text-h5 mb-1 nord4--text">
           {{ title }}
         </v-list-item-title>
-        <v-list-item-subtitle class="accent--text">{{
+        <v-list-item-subtitle class="nord4--text">{{
           description
         }}</v-list-item-subtitle>
       </v-list-item-content>
@@ -17,11 +17,15 @@
     <v-card-actions>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-subtitle>{{ createAt }}</v-list-item-subtitle>
+          <v-list-item-subtitle class="nord4--text">{{
+            createAt
+          }}</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <v-spacer />
-      <v-btn color="primary" text x-small :to="'/notice/' + title"> seguir leyendo</v-btn>
+      <v-btn color="nord7" text x-small :to="'/notice/' + title">
+        seguir leyendo</v-btn
+      >
     </v-card-actions>
   </v-card>
 </template>
