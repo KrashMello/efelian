@@ -1,22 +1,20 @@
 <template>
   <v-row>
-    <v-col cols="12" md="3">
-      <v-card color="nord0">
-        <v-img
-          class="white--text align-end"
-          height="200px"
-          src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-        >
-        </v-img>
-        <p class="text-h6 nord5--text text-center mb-0">Elumian</p>
-
-        <v-card-text class="nord5--text text-justify">
-          <div>
-            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-            cillum sint consectetur cupidatat.
-          </div>
-        </v-card-text>
-      </v-card>
+    <v-col cols="12">
+      <v-toolbar dense color="nord0" flat dark rounded>
+        <v-app-title> Proyectos </v-app-title>
+      </v-toolbar>
+    </v-col>
+    <v-col v-for="i in 2" :key="i" cols="10" offset="1" md="3">
+      <project-card :title="i" />
+    </v-col>
+    <v-col cols="12">
+      <v-toolbar dense color="nord0" dark flat rounded>
+        <v-app-title> Trabajos </v-app-title>
+      </v-toolbar>
+    </v-col>
+    <v-col v-for="i in 1" :key="i" cols="10" offset="1" md="3">
+      <project-card :title="i" />
     </v-col>
   </v-row>
 </template>
