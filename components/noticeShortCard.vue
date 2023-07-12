@@ -1,5 +1,5 @@
 <template>
-  <v-card color="nord1" class="rounded-xl">
+  <v-card :to="`notices/${id}`" color="nord1" class="rounded-xl">
     <div class="d-flex flex-no-wrap" style="justify-content: start">
       <v-avatar
         v-if="!$vuetify.breakpoint.mobile"
@@ -24,6 +24,10 @@
 export default {
   name: 'NoticeShortCard',
   props: {
+    id: {
+      type: String,
+      default: '1',
+    },
     title: {
       type: String,
       default: 'Short Card',

@@ -23,6 +23,7 @@
           </v-col>
           <v-col v-for="i in 4" :key="i" cols="12">
             <notice-short-card
+              :to="i"
               :title="`noticia n° ${i}`"
               imgSrc="https://picsum.photos/500/300?random"
             />
