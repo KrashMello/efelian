@@ -1,54 +1,26 @@
 <template>
-  <v-app dark>
-    <layout-navbar />
-    <v-navigation-drawer
-      v-model="drawer"
-      fixed
-      temporary
-      color="nord0"
-      @input="changeDrawer"
-    >
+  <v-app>
+    <layouts-navbar />
+    <v-navigation-drawer v-model="layout.drawer" temporary color="nord0">
       <v-list nav dense dark>
-        <v-list-item-group>
-          <v-list-item
-            color="nord7"
-            v-for="(menu, i) in menuList"
-            :key="i"
-            :to="menu.to"
-          >
-            <v-list-item-title>{{ menu.title }}</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
+        <v-list-item color="nord7" v-for="(menu, i) in menuList" :key="i" :to="menu.to">
+          <v-list-item-title>
+            {{ menu.title }}
+          </v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-
     <v-main class="pb-0">
       <v-container fluid>
-        <Nuxt />
+        <NuxtPage />
       </v-container>
     </v-main>
-    <layout-footer />
+    <layouts-footer />
   </v-app>
 </template>
 
-<script>
-import { mapGetters, mapMutations } from 'vuex'
-export default {
-  name: 'DefaultLayout',
-  computed: {
-    ...mapGetters({ drawer: 'getDrawer', menuList: 'getMenuList' }),
-  },
-  mounted() {
-    this.$vuetify.theme.dark = false
-  },
-  methods: {
-    ...mapMutations({ changeDrawer: 'setDrawer' }),
-  },
-}
+<script setup>
+const layout = useLayoutsStore()
+const { menuList } = layout
 </script>
 
-<style>
-/* .v-application--wrap > header {
-  height: 20px !important;
-} */
-</style>

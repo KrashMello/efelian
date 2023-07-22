@@ -1,33 +1,17 @@
-// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
-//
-// The variables you want to modify
-// $font-size-root: 20px;
-@import '~vuetify/src/styles/styles.sass';
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+$family: 'Ubuntu', 'Roboto';
+@use 'vuetify/settings' with (
+ $body-font-family: $family
+);
 @import "/node_modules/nord/src/sass/nord.scss";
 
-$body-font-family: "Ubuntu";
-
-$material-light: map-merge(
-  $material-light,
-  (
-    'background':
-      var(
-        --v-background-base,
-        map-get($material-light, 'background') '!important'
-      )
-  )
-);
-$material-dark: map-merge(
-  $material-dark,
-  (
-    'background':
-      var(
-        --v-background-base,
-        map-get($material-dark, 'background') '!important'
-      )
-  )
-);
+:root {
+  font-family:  'Ubuntu', 'Roboto';
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Ubuntu', 'Roboto';
+  }
+}
 .textPrimary--text {
   color: "#434C5E"
 };
@@ -86,4 +70,3 @@ $material-dark: map-merge(
 .nord15--text{
   color: $nord15 !important
 }
-

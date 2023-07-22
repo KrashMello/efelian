@@ -1,43 +1,26 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/"> Home page </NuxtLink>
+  <v-app>
+    <layouts-navbar />
+    <v-navigation-drawer v-model="layout.drawer" absolute temporary color="nord0">
+      <v-list nav dense dark>
+        <v-list-item color="nord7" v-for="(menu, i) in menuList" :key="i" :to="menu.to">
+          <v-list-item-title>
+            {{ menu.title }}
+          </v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <v-main class="pb-0">
+      <v-container fluid style="height: 60dvh !important; height: 60vh !important" class="fill-height ">
+        <slot />
+      </v-container>
+    </v-main>
+    <layouts-footer />
   </v-app>
 </template>
 
-<script>
-export default {
-  name: 'EmptyLayout',
-  layout: 'empty',
-  props: {
-    error: {
-      type: Object,
-      default: null,
-    },
-  },
-  data() {
-    return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred',
-    }
-  },
-  head() {
-    const title =
-      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
-    return {
-      title,
-    }
-  },
-}
+<script setup>
+const layout = useLayoutsStore()
+const { menuList } = layout
 </script>
 
-<style scoped>
-h1 {
-  font-size: 20px;
-}
-</style>
