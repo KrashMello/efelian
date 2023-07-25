@@ -2,8 +2,8 @@
   <v-card color="rgba(0,0,0,0)" flat :to="to">
     <v-img class="white--text align-end rounded-xl" height="9em" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
     </v-img>
-    <p class="text-h6 primary--text text-center mb-0 mt-3">{{ title }}</p>
-    <v-card-text class="primary--text text-justify">
+    <p class="text-h6 text-primary text-center mb-0 mt-3">{{ title }}</p>
+    <v-card-text class="text-primary text-justify">
       <div>
         {{ description }}
       </div>

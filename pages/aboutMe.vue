@@ -2,17 +2,13 @@
   <v-container fluid>
     <v-row>
       <v-col cols="12">
-        <v-card flat>
-          <!-- <v-img -->
-          <!--   class="card-about-me" -->
-          <!--   src="https://wallpaperaccess.com/full/770382.jpg" -->
-          <!-- > -->
+        <v-card flat color="backgroundCard">
           <v-list-item>
 
-            <v-card-title primary-title class="primary--text">
+            <v-card-title primary-title class="text-primary">
               <strong> Conoceme </strong>
             </v-card-title>
-            <v-card-text class="textAncent--text text-justify">
+            <v-card-text class="text-accent text-justify">
               Hola mundo, mi nombre es <b>Joel Enrique</b> nacido en venezuela
               tengo actualmente {{ new Date().getFullYear() - 1994 }} años de
               edad, me desenvuelvo como un desarrollador web en crecimiento
@@ -33,11 +29,11 @@
               <!-- <v-img :src="imgSrc" /> -->
             </v-list-item-avatar>
 
-            <v-card-title primary-title class="primary--text">
+            <v-card-title primary-title class="text-primary">
               <strong> ¿Que es KrashMello? </strong>
             </v-card-title>
             <v-card-text>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 algunas personas que he tratado me han realizado la pregunta
                 de que es krashmello o porque elegí ese nombre y la realidad
                 no es otra que un nombre surgido de las iniciales
@@ -46,7 +42,7 @@
                 a construirlo y buscar combinaciones para el nombre y me
                 agrado el resultado.
               </p>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 Cabe destacar que krashmello es una iniciativa de un proyecto
                 que se divide en varias fases y no un nombre como tal, una de
                 las fases es poder ayudar en el mundo de los programadores un
@@ -62,11 +58,11 @@
           <V-divider class="my-5" />
           <v-list-item>
 
-            <v-card-title primary-title class="primary--text">
+            <v-card-title primary-title class="text-primary">
               <strong> Lo que me apaciona </strong>
             </v-card-title>
             <v-card-text>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 me gustan los video juegos, aprender cosas nuevas todos los
                 dias, el comportamiento humano, diseñar aunque en esto no soy
                 tan bueno creo en realidad que mi parte creativa del cerebro
@@ -112,11 +108,11 @@
           <!-- </v-list-item> -->
           <V-divider class="my-5" />
           <v-list-item>
-            <v-card-title primary-title class="primary--text">
+            <v-card-title primary-title class="text-primary">
               <strong> Estudios </strong>
             </v-card-title>
             <v-card-text>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 mis inicio de la educacion empezo en una pequeña escuelita
                 cerca de casa donde culmine la educacion primaria, al
                 finalizarla sin perdida de tiempo empeze la secundaria
@@ -134,13 +130,13 @@
                 venezuela donde pase 7 años de mi vida peleando con mi yo
                 perezoso y procrastinador para poder terminarla.
               </p>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 en los inicios de la universidad sentia que para que servian
                 las matematias la fisica la quimica y muchas de las materias
                 que ayi se inpartian, un dia eso se lo dije a un profesor y el
                 con total seguridad en su respuesta me dijo. <br /><br />
 
-                <em style="background-color: #e0e0e0">
+                <em>
                   '' si lo que quieres ser es un ingeniero de sistema tienes
                   que saber de todo esto y me dio un ejemplo que a dia de hoy
                   lo tengo presente, sabes como funciona tu cuerpo
@@ -153,7 +149,7 @@
                 en el futuro lo que tu diseñaras sera un sistema y en el puede
                 estar presente las matematicas la biologia la fisica y demas.
               </p>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 fue ahi cuando realmente me intereze mas por el todo y el por
                 que ocurren las cosas cada vez me interezaban mas llegar al
                 punto de poder crear cosas yo con programacion, y de alli fui
@@ -165,11 +161,11 @@
           <V-divider class="my-5" />
           <v-list-item>
 
-            <v-card-title primary-title class="primary--text">
+            <v-card-title primary-title class="text-primary">
               <strong> Experiencia laboral </strong>
             </v-card-title>
             <v-card-text>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 mis inicio de la educacion empezo en una pequeña escuelita
                 cerca de casa donde culmine la educacion primaria, al
                 finalizarla sin perdida de tiempo empeze la secundaria
@@ -187,7 +183,7 @@
                 venezuela donde pase 7 años de mi vida peleando con mi yo
                 perezoso y procrastinador para poder terminarla.
               </p>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 en los inicios de la universidad sentia que para que servian
                 las matematias la fisica la quimica y muchas de las materias
                 que ayi se inpartian, un dia eso se lo dije a un profesor y el
@@ -200,7 +196,7 @@
                 sera un sistema y en el puede estar presente las matematicas
                 la biologia la fisica y demas.
               </p>
-              <p class="primary--text text-justify">
+              <p class="text-accent text-justify">
                 fue ahi cuando realmente me intereze mas por el todo y el por
                 que ocurren las cosas cada vez me interezaban mas llegar al
                 punto de poder crear cosas yo con programacion, y de alli fui

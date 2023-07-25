@@ -10,9 +10,13 @@ export const useLayoutsStore = defineStore('layouts', {
       { title: 'Noticias', to: '/notices' },
       { title: 'Sobre mi', to: '/aboutMe' },
       {
-        title: 'proyectos',
+        title: 'Proyectos',
         to: '/projects/',
       },
+      {
+        title: 'Recursos',
+        to: '/resources/',
+      }
     ],
     socialMedia: [
       {
@@ -24,10 +28,12 @@ export const useLayoutsStore = defineStore('layouts', {
     ],
   }),
   getters: {
+
   },
   actions: {
     setDrawer() {
       this.drawer = !this.drawer
-    }
+    },
+
   },
 })
