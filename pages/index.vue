@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row justify="center" class="mt-5">
-      <v-col cols="12">
+      <v-col :cols="`${$vuetify.display.mobile ? '12' : '6'}`">
         <h1 class="titlele text-primary font-weight-black" v-text="'MI NOMBRE ES JOEL'" />
         <div style="min-height: 56px">
           <v-scroll-x-transition>
@@ -15,6 +15,10 @@
         <p :class="`subtitle-h mt-3 ${$vuetify.theme.name === 'dark' ? 'text-secondary' : 'text-primary'}`">
           Me gusta desarrollar herramientas para el uso y beneficios de muchos
         </p>
+      </v-col>
+      <v-col v-if="!$vuetify.display.mobile" cols="6">
+        <v-img max-height="247"
+          :src="`${$vuetify.theme.name === 'dark' ? '/logoDeer_dark.webp' : '/logoDeer_light.webp'}`" />
       </v-col>
     </v-row>
     <v-row class="mt-3">

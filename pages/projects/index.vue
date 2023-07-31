@@ -3,19 +3,21 @@
     <v-col cols="12">
       <v-toolbar dense color="backgroundToolbar" title="Proyectos" dark rounded />
     </v-col>
-    <v-col v-for="i in 2" :key="i" cols="10" offset="1" md="3">
-      <project-card :title="i" />
+    <v-col v-for="(project, i) in projects" :key="i" cols="10" offset="1" md="3">
+      <project-card :title="project?.title" />
     </v-col>
     <v-col cols="12">
       <v-toolbar dense color="backgroundToolbar" dark rounded title="Trabajos" />
     </v-col>
-    <v-col v-for="i in 1" :key="i" cols="10" offset="1" md="3">
-      <project-card :title="i" />
+    <v-col v-for="(work, i) in works" :key="i" cols="10" offset="1" md="3">
+      <project-card :title="work?.title" />
     </v-col>
   </v-row>
 </template>
 
 <script setup>
+let projects = []
+let works = []
 useHead({
   title: 'Proyectos',
   meta: [

@@ -7,7 +7,7 @@
             {{ menu.title }}
           </v-btn>
         </v-col>
-        <v-col v-else cols="5">
+        <v-col v-else cols="5" class="d-flex align-center">
           <v-btn icon color="primary" @click="setDrawer">
             <v-icon> mdi-menu </v-icon>
           </v-btn>
@@ -17,16 +17,15 @@
             min-height="32" min-width="32" max-height="32" max-width="32" />
 
         </v-col>
-        <v-col v-if="!$vuetify.display.mobile" cols="5" class="d-flex justify-end">
+        <v-col v-if="!$vuetify.display.mobile" cols="5" class="d-flex justify-end align-center">
           <v-btn v-for="(item, i) in socialMedia" :key="i" :icon="item.icon" link color="textPrimary" :href="item.href"
             target="blank" />
-          <v-checkbox v-model="darkMode" color="primary" false-icon="mdi-white-balance-sunny"
-            true-icon="mdi-moon-waning-crescent" style="width:40px !important; max-width:40px !important;" />
+          <v-btn @click="changeDarkMode" color="primary"
+            :icon="`${darkMode ? 'mdi-moon-waning-crescent' : 'mdi-white-balance-sunny'}`" />
         </v-col>
-        <v-col v-else cols="5" class="d-flex justify-end">
-
-          <v-checkbox v-model="darkMode" color="primary" density="compact" false-icon="mdi-white-balance-sunny"
-            true-icon="mdi-moon-waning-crescent" style="width:40px !important; max-width:40px !important;" />
+        <v-col v-else cols="5" class="d-flex justify-end align-center">
+          <v-btn @click="changeDarkMode" color="primary"
+            :icon="`${darkMode ? 'mdi-moon-waning-crescent' : 'mdi-white-balance-sunny'}`" />
         </v-col>
       </v-row>
     </v-container>
@@ -40,6 +39,10 @@ let darkMode = ref(false)
 let layouts = useLayoutsStore()
 const { menuList, socialMedia, setDrawer, } = layouts
 const theme = useTheme()
+
+function changeDarkMode() {
+  darkMode.value = !darkMode.value;
+}
 watch(darkMode, async (val) => {
   theme.global.name.value = val ? 'dark' : 'light'
   if (val)

@@ -23,5 +23,4 @@ const route = useRoute()
 const { slug } = route.params
 const { getOneResource } = useResourceStore()
 const resource = getOneResource(slug)
-console.log(resource)
 </script>
