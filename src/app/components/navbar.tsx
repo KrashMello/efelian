@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full h-24 p-4 border-b border-slate-600 justify-between items-center inline-flex">
+      <nav className="fixed inline-flex z-10 w-full h-24 p-4 border-b border-slate-600 justify-between items-center">
         <Link href="/" className="h-11 justify-center items-center flex">
           {theme === "dark" ? (
             <Image
@@ -30,7 +30,7 @@ const Navbar = () => {
             />
           )}
         </Link>
-        <div className="flex gap-2">
+        <div className="flex gap-2 text-zinc-600 dark:text-white ">
           <SwitchTheme />
           <ul className="hidden px-7 justify-center items-center gap-6 md:flex">
             {items.map((item) => {
@@ -56,7 +56,12 @@ const items = [
   {
     key: "Inicio",
     title: "Inicio",
-    to: "/",
+    to: "/#me",
+  },
+  {
+    key: "Experience",
+    title: "Experiencia",
+    to: "/#experience",
   },
   {
     key: "AboutMe",
