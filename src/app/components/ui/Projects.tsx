@@ -30,7 +30,7 @@ const Projects = async () => {
   return (
     <section
       id="projects"
-      className="snap-center w-full min-h-screen h-fit flex px-10 md:px-20 pt-32 md:pt-32  flex-col justify-center md:justify-start items-start gap-6"
+      className="snap-start w-full min-h-screen h-fit flex px-10 md:px-20 pt-32 md:pt-32  flex-col justify-center md:justify-start items-start gap-6"
     >
       <header className="w-full h-12 md:h-24 md:py-2 justify-start items-start gap-1">
         <h2 className=" flex items-center gap-4 text-slate-600 dark:text-gray-100 text-3xl md:text-6xl font-normal">
