@@ -4,7 +4,7 @@ import Experience from "./components/ui/Experiance";
 import Projects from "./components/ui/Projects";
 
 export const metadata: Metadata = {
-  title: process.env.TITLE_PAGE + "Inicio",
+  title: process.env.TITLE_PAGE + "| portafolio",
   description: "Breve reseña de quien es KrashMello y lo que hace.",
   icons: "/favicon.ico",
 };
