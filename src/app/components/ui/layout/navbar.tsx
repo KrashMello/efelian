@@ -8,7 +8,7 @@ import NavBtn from "./NavBtn";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-slate-200 dark:bg-slate-800 fixed inline-flex z-10 w-full h-24 p-4 border-b border-slate-600 justify-between items-center">
+      <nav className="bg-opacity-50 backdrop-filter backdrop-blur-lg fixed inline-flex z-10 w-full h-24 p-4 border-b border-slate-600 justify-between items-center">
         <Link
           href="/"
           scroll={false}

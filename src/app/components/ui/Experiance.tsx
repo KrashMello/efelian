@@ -1,11 +1,74 @@
+import DescriptionItem from "../DescriptionItem";
+
 const Experience = () => {
+  const experiences = [
+    {
+      title: (
+        <>
+          Lácteos los Andes C.A
+          <span className="text-sm text-gray-400">jul 2019 - feb 2021</span>
+        </>
+      ),
+      description: (
+        <ul className="list-disc flex flex-col gap-3">
+          <li>Desarrollo sistema integral multi modular</li>
+          <li>
+            Diseño de interfaz y base de datos del sistema de SIELLA usando las
+            siguientes tegnologías (Vue, postgreSQL, Laravel)
+          </li>
+          <li>Desarrollo del sistema multi modular SIELLA</li>
+          <li>Integración de sistema multi modular</li>
+        </ul>
+      ),
+    },
+    {
+      title: (
+        <>
+          Alcaldía de Iribarren
+          <span className="text-sm text-gray-400">may 2022 - Actualidad</span>
+        </>
+      ),
+      description: (
+        <ul className="list-disc flex flex-col gap-3">
+          <li>Desarrollo sistema integral multi modular</li>
+          <li>Diseño de interfaz y base de datos del sistema de bienes</li>
+          <li>
+            Desarrollo del sistema de bienes usando las siguientes tegnologías
+            (postgreSQL, nuxtJS)
+          </li>
+          <li>Integración de sistema multi modular</li>
+        </ul>
+      ),
+    },
+    {
+      title: (
+        <>
+          Kia Motors Ecuador
+          <span className="text-sm text-gray-400">jul 2023 - Actualidad</span>
+        </>
+      ),
+      description: (
+        <ul className="list-disc flex flex-col gap-3">
+          <li>
+            Desarrollo web landing page{" "}
+            <a
+              className="text-[#5E81AC] dark:text-[#88C0D0] hover:underline underline-offset-4"
+              href="https://kiateconecta.com/kiaSuscripcion"
+            >
+              kia te conecta
+            </a>
+          </li>
+        </ul>
+      ),
+    },
+  ];
   return (
     <section
       id="experience"
-      className="snap-start w-full min-h-screen h-fit flex px-20 py-32 dark:bg-gray-700 bg-[#D8DEE9] flex-col justify-start items-start gap-6"
+      className="snap-start w-full min-h-screen h-fit flex px-10 md:px-20 py-32 dark:bg-gray-700 bg-[#D8DEE9] flex-col justify-start items-start gap-6"
     >
       <header className="max-w-[1920px] mx-auto w-full h-12 md:h-24 md:py-2 justify-start items-start gap-1">
-        <h2 className=" flex items-center gap-4 text-slate-600 dark:text-gray-100 text-3xl md:text-6xl font-normal">
+        <h2 className=" flex items-center gap-4 text-[#5E81AC] dark:text-[#88C0D0] text-3xl md:text-6xl font-normal">
           Experiencia{" "}
           <span>
             <svg
@@ -24,68 +87,15 @@ const Experience = () => {
       </header>
       <div className="w-full mx-auto max-w-[1920px]">
         <dl className="text-slate-500 dark:text-white flex flex-wrap gap-12 justify-center w-full">
-          <div className="w-full md:w-[40%]">
-            <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
-              Lacteos los Andes C.A
-              <span className="text-sm text-gray-400">ene 2002 - ene 2008</span>
-            </dt>
-            <dd className="py-3 pl-12">
-              <ul className="list-disc flex flex-col gap-3">
-                <li>Limpieza de baños activista progresivo bien cacheroso</li>
-                <li>Administracion de archivos archivosos</li>
-                <li>
-                  Creacion de sistema administrativo para la lectura de archivos
-                  y almacenamiento de datos judiciales
-                </li>
-                <li>Administracion de servidores</li>
-              </ul>
-            </dd>
-          </div>
-          <div className="w-full md:w-[40%]">
-            <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
-              Lacteos los Andes C.A
-              <span className="text-sm text-gray-400">ene 2002 - ene 2008</span>
-            </dt>
-            <dd className="py-3 pl-12">
-              <ul className="list-disc flex flex-col gap-3">
-                <li>Limpieza de baños activista progresivo bien cacheroso</li>
-                <li>Administracion de archivos archivosos</li>
-                <li>
-                  Creacion de sistema administrativo para la lectura de archivos
-                  y almacenamiento de datos judiciales
-                </li>
-                <li>Administracion de servidores</li>
-              </ul>
-            </dd>
-          </div>
-          <div className="w-full md:w-[40%]">
-            <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
-              Alcaldia de Iribarren
-              <span className="text-sm text-gray-400">ene 2008 - ene 2012</span>
-            </dt>
-            <dd className="py-3 pl-12">
-              <ul className="list-disc flex flex-col gap-3">
-                <li>algodon que anexar aqui</li>
-                <li>Administracion de archivos archivosos</li>
-                <li>
-                  Creacion de sistema administrativo para la gestion de bienes y
-                  responsabilidad de uso de bienes
-                </li>
-                <li>Administracion de servidores</li>
-              </ul>
-            </dd>
-          </div>
-          <div className="w-full md:w-[40%]">
-            <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
-              kia Motors Ecuador
-              <span className="text-sm text-gray-400">ene 2013 - ene 2013</span>
-            </dt>
-            <dd className="py-3 pl-12">
-              <ul className="list-disc flex flex-col gap-3">
-                <li>diseño web landing page kia te conecta</li>
-              </ul>
-            </dd>
-          </div>
+          {experiences.map((item) => {
+            return (
+              <DescriptionItem
+                key={crypto.randomUUID()}
+                title={item.title}
+                description={item.description}
+              />
+            );
+          })}
         </dl>
       </div>
     </section>

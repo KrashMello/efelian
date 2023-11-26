@@ -10,7 +10,7 @@ const NavDropdownMenu = (props: {
   items: { key: string; to: string; title: string }[];
 }) => {
   return (
-    <Dropdown className="bg-slate-300 dark:bg-slate-700">
+    <Dropdown className="bg-opacity-30 backdrop-filter backdrop-blur-lg dark:bg-opacity-30 dark:backdrop-filter dark:backdrop-blur-lg bg-slate-300 dark:bg-slate-700">
       <DropdownTrigger>
         <Button
           variant="light"
