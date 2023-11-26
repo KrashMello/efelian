@@ -40,7 +40,7 @@ const Projects = async () => {
           </span>
         </h2>
       </header>
-      <div className="flex flex-wrap gap-5 max-w-[1920px] mx-auto">
+      <div className="flex flex-wrap gap-5 max-w-[1920px] w-full mx-auto">
         {repoData.map((repo: any) => {
           return (
             <>
@@ -93,7 +93,7 @@ const Projects = async () => {
           </span>
         </h2>
       </div>
-      <div className="flex max-w-[1920px] mx-auto flex-wrap gap-5">
+      <div className="flex max-w-[1920px] mx-auto flex-wrap gap-5 w-full">
         {allRepoData.map((repo: any) => {
           return (
             <>
