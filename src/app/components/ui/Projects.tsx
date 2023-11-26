@@ -47,7 +47,7 @@ const Projects = async () => {
               <Article
                 key={repo.id}
                 title={repo.name}
-                href={repo.homepage != null ? repo.homepage : repo.html_url}
+                href={repo.homepage !== "" ? repo.homepage : repo.html_url}
                 description={repo.description}
                 footer={[
                   // <EflTag title="HTML" key={crypto.randomUUID()} />,
