@@ -4,7 +4,7 @@ const Experience = () => {
       id="experience"
       className="snap-start w-full min-h-screen h-fit flex px-20 py-32 dark:bg-gray-700 bg-[#D8DEE9] flex-col justify-start items-start gap-6"
     >
-      <header className="w-full h-12 md:h-24 md:py-2 justify-start items-start gap-1">
+      <header className="max-w-[1920px] w-full h-12 md:h-24 md:py-2 justify-start items-start gap-1">
         <h2 className=" flex items-center gap-4 text-slate-600 dark:text-gray-100 text-3xl md:text-6xl font-normal">
           Experiencia{" "}
           <span>
@@ -22,7 +22,7 @@ const Experience = () => {
           </span>
         </h2>
       </header>
-      <div className="w-full">
+      <div className="w-full max-w-[1920px]">
         <dl className="text-slate-500 dark:text-white flex flex-wrap gap-12 justify-center w-full">
           <div className="w-full md:w-[40%]">
             <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
