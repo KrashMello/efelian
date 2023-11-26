@@ -24,7 +24,7 @@ const Experience = () => {
       </header>
       <div className="w-full">
         <dl className="text-slate-500 dark:text-white flex flex-wrap gap-12 justify-center w-full">
-          <div className="w-[40%]">
+          <div className="w-full md:w-[40%]">
             <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
               Lacteos los Andes C.A
               <span className="text-sm text-gray-400">ene 2002 - ene 2008</span>
@@ -41,7 +41,7 @@ const Experience = () => {
               </ul>
             </dd>
           </div>
-          <div className="w-[40%]">
+          <div className="w-full md:w-[40%]">
             <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
               Lacteos los Andes C.A
               <span className="text-sm text-gray-400">ene 2002 - ene 2008</span>
@@ -58,7 +58,7 @@ const Experience = () => {
               </ul>
             </dd>
           </div>
-          <div className="w-[40%]">
+          <div className="w-full md:w-[40%]">
             <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
               Alcaldia de Iribarren
               <span className="text-sm text-gray-400">ene 2008 - ene 2012</span>
@@ -75,7 +75,7 @@ const Experience = () => {
               </ul>
             </dd>
           </div>
-          <div className="w-[40%]">
+          <div className="w-full md:w-[40%]">
             <dt className="py-5 text-xl flex flex-col font-semibold border-b border-b-gray-400">
               kia Motors Ecuador
               <span className="text-sm text-gray-400">ene 2013 - ene 2013</span>

@@ -24,7 +24,7 @@ export default function RootLayout({
             <header className="w-full h-fit">
               <Navbar />
             </header>
-            <main className="snap-y snap-mandatory h-screen relative w-full overflow-auto">
+            <main className="snap-y snap-proximity h-screen relative w-full overflow-auto">
               {children}
             </main>
           </div>
