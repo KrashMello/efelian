@@ -1,34 +1,34 @@
-"use client";
 import Link from "next/link";
-import NavBtn from "./NavBtn";
 import Image from "next/image";
 import React from "react";
-import NavDropdownMenu from "./NavDropdownMenu";
-import { useTheme } from "next-themes";
-import SwitchTheme from "./SwitchTheme";
+import NavDropdownMenu from "../../NavDropdownMenu";
+import SwitchTheme from "../../SwitchTheme";
+import NavBtn from "./NavBtn";
 
 const Navbar = () => {
-  const { theme } = useTheme();
-
   return (
     <>
-      <nav className="fixed inline-flex z-10 w-full h-24 p-4 border-b border-slate-600 justify-between items-center">
-        <Link href="/" className="h-11 justify-center items-center flex">
-          {theme === "dark" ? (
-            <Image
-              width={44}
-              height={44}
-              src="/logo64x64_dark.png"
-              alt="Logo krashmello"
-            />
-          ) : (
-            <Image
-              width={44}
-              height={44}
-              src="/logo64x64_light.png"
-              alt="Logo krashmello"
-            />
-          )}
+      <nav className="bg-slate-200 dark:bg-slate-800 fixed inline-flex z-10 w-full h-24 p-4 border-b border-slate-600 justify-between items-center">
+        <Link
+          href="/"
+          scroll={false}
+          className="h-11 justify-center items-center flex"
+        >
+          <Image
+            className="dark:block hidden"
+            width={44}
+            height={44}
+            src="/logo64x64_dark.png"
+            alt="Logo deer krashmello"
+          />
+
+          <Image
+            className="dark:hidden block"
+            width={44}
+            height={44}
+            src="/logo64x64_light.png"
+            alt="Logo deer krashmello"
+          />
         </Link>
         <div className="flex gap-2 text-zinc-600 dark:text-white ">
           <SwitchTheme />
@@ -64,14 +64,9 @@ const items = [
     to: "/#experience",
   },
   {
-    key: "AboutMe",
-    title: "Sobre mi",
-    to: "/aboutMe",
-  },
-  {
     key: "projects",
     title: "Proyectos",
-    to: "/projects",
+    to: "/#projects",
   },
 ];
 

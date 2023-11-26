@@ -49,8 +49,8 @@ const SwitchTheme = () => {
   return (
     <Button
       variant="light"
-      className="text-zinc-600 dark:text-white"
-      onClick={() => setTheme(theme === "dark" ? "ligh" : "dark")}
+      className="text-[#5E81AC] dark:text-white"
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       isIconOnly
     >
       <DarkModeIcon />
