@@ -4,7 +4,7 @@ const Article = (props: any) => {
       <a
         href={props.href}
         target="_blank"
-        className="group flex-grow basis-[200] w-fit self-stretch hover:transition hover:duration-200 transform hover:scale-105 linear "
+        className="group flex-grow basis-[200] w-fit self-stretch hover:transition hover:duration-200 hover:scale-100 ease-in"
       >
         <article className="flex flex-wrap h-40 w-80 md:w-full rounded-md hover:border-[#88C0D0] hover:border-2 hover:shadow-[#88C0D0] shadow px-6 md:px-12 py-6 dark:bg-gray-600 bg-slate-300 justify-start items-start gap-3">
           <header className="w-full flex flex-col  items-center gap-2.5">
