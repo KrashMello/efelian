@@ -5,9 +5,9 @@ const Principal = () => {
   return (
     <section
       id="me"
-      className="snap-start max-w-[1920px] w-full h-screen flex items-center  px-20 py-12"
+      className="snap-start  w-full h-screen flex items-center  px-20 py-12"
     >
-      <div className="w-full flex flex-col gap-6 md:gap-11">
+      <div className="w-full max-w-[1920px] mx-auto flex flex-col gap-6 md:gap-11">
         <div className="w-full flex justify-center">
           <LogoShortDeer />
         </div>

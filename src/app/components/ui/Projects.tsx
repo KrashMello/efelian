@@ -32,7 +32,7 @@ const Projects = async () => {
       id="projects"
       className="snap-start w-full min-h-screen h-fit flex px-10 md:px-20 pt-32 md:pt-32  flex-col justify-center md:justify-start items-start gap-6"
     >
-      <header className="w-full max-w-[1920px] h-12 md:h-24 md:py-2 justify-start items-start gap-1">
+      <header className="w-full max-w-[1920px] mx-auto h-12 md:h-24 md:py-2 justify-start items-start gap-1">
         <h2 className=" flex items-center gap-4 text-slate-600 dark:text-gray-100 text-3xl md:text-6xl font-normal">
           Últimos proyectos{" "}
           <span>
@@ -40,7 +40,7 @@ const Projects = async () => {
           </span>
         </h2>
       </header>
-      <div className="flex flex-wrap gap-5 max-w-[1920px]">
+      <div className="flex flex-wrap gap-5 max-w-[1920px] mx-auto">
         {repoData.map((repo: any) => {
           return (
             <>
@@ -85,7 +85,7 @@ const Projects = async () => {
           );
         })}
       </div>
-      <div className="w-full max-w-[1920px] h-12 md:h-24 md:py-2 justify-start items-start gap-1">
+      <div className="w-full max-w-[1920px] mx-auto h-12 md:h-24 md:py-2 justify-start items-start gap-1">
         <h2 className=" flex items-center gap-4 text-slate-600 dark:text-gray-100 text-3xl md:text-6xl font-normal">
           Todos los proyectos{" "}
           <span>
@@ -93,7 +93,7 @@ const Projects = async () => {
           </span>
         </h2>
       </div>
-      <div className="flex max-w-[1920px] flex-wrap gap-5">
+      <div className="flex max-w-[1920px] mx-auto flex-wrap gap-5">
         {allRepoData.map((repo: any) => {
           return (
             <>
