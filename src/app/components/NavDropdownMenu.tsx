@@ -10,9 +10,13 @@ const NavDropdownMenu = (props: {
   items: { key: string; to: string; title: string }[];
 }) => {
   return (
-    <Dropdown className="bg-zinc-700">
+    <Dropdown className="bg-slate-300 dark:bg-slate-700">
       <DropdownTrigger>
-        <Button variant="light" isIconOnly className="text-slate-600">
+        <Button
+          variant="light"
+          isIconOnly
+          className="text-slate-600 dark:text-white"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -28,7 +32,11 @@ const NavDropdownMenu = (props: {
       </DropdownTrigger>
       <DropdownMenu aria-label="Dynamic Actions" items={props.items}>
         {(item) => (
-          <DropdownItem key={item.key} href={item.to} color="default">
+          <DropdownItem
+            key={item.key}
+            href={item.to}
+            className="text-slate-600 dark:text-white"
+          >
             {item.title}
           </DropdownItem>
         )}
