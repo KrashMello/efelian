@@ -6,7 +6,10 @@ const Footer = () => {
       <div className="flex flex-col gap-3">
         <LogoLarge />
         <div className="w-full flex text-zinc-600 dark:text-white  justify-center gap-3 ">
-          <a href="www.linkedin.com/in/joel-enrike-soteldo" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/joel-enrike-soteldo"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
