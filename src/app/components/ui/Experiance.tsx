@@ -5,38 +5,26 @@ const Experience = () => {
     {
       title: (
         <>
-          Lácteos los Andes C.A
-          <span className="text-sm text-gray-400">jul 2019 - feb 2021</span>
-        </>
-      ),
-      description: (
-        <ul className="list-disc flex flex-col gap-3">
-          <li>Desarrollo sistema integral multi modular</li>
-          <li>
-            Diseño de interfaz y base de datos del sistema de SIELLA usando las
-            siguientes tegnologías (Vue, postgreSQL, Laravel)
-          </li>
-          <li>Desarrollo del sistema multi modular SIELLA</li>
-          <li>Integración de sistema multi modular</li>
-        </ul>
-      ),
-    },
-    {
-      title: (
-        <>
-          Alcaldía de Iribarren
+          Alcaldía de Iribarren - Lara, Venezuela
           <span className="text-sm text-gray-400">may 2022 - Actualidad</span>
         </>
       ),
       description: (
         <ul className="list-disc flex flex-col gap-3">
-          <li>Desarrollo sistema integral multi modular</li>
-          <li>Diseño de interfaz y base de datos del sistema de bienes</li>
+          <li>
+            Desarrollo sistema integral multi modular donde se gestiona usuarios
+            y los bienes relacionados a todos los departamentos de la
+            institucion.
+          </li>
+          <li>
+            Diseño de interfaz usuario y base de datos del sistema de bienes
+          </li>
           <li>
             Desarrollo del sistema de bienes usando las siguientes tegnologías
             (postgreSQL, nuxtJS)
           </li>
           <li>Integración de sistema multi modular</li>
+          <li>encargado del analisis y desarrollo del sistema.</li>
         </ul>
       ),
     },
@@ -44,13 +32,13 @@ const Experience = () => {
       title: (
         <>
           Kia Motors Ecuador
-          <span className="text-sm text-gray-400">jul 2023 - Actualidad</span>
+          <span className="text-sm text-gray-400">jul 2023 - nov 2023</span>
         </>
       ),
       description: (
         <ul className="list-disc flex flex-col gap-3">
           <li>
-            Desarrollo web landing page{" "}
+            Desarrollo landing page{" "}
             <a
               className="text-[#5E81AC] dark:text-[#88C0D0] hover:underline underline-offset-4"
               href="https://kiateconecta.com/kiaSuscripcion"
@@ -58,6 +46,28 @@ const Experience = () => {
               kia te conecta
             </a>
           </li>
+          <li>Encargado del desarrollo del sitio web de la landing</li>
+        </ul>
+      ),
+    },
+    {
+      title: (
+        <>
+          Lácteos los Andes C.A - Lara, venezuela
+          <span className="text-sm text-gray-400">jul 2019 - feb 2021</span>
+        </>
+      ),
+      description: (
+        <ul className="list-disc flex flex-col gap-3">
+          <li>
+            Desarrollo sistema integral multi modular donde se gestiona los
+            usuarios y los distintos tramites del area consultoria juridica
+          </li>
+          <li>
+            Diseño de interfaz de usuario y base de datos del sistema usando las
+            siguientes tegnologías (Vue, postgreSQL, Laravel)
+          </li>
+          <li>encargado del analisis y desarrollo del sistema.</li>
         </ul>
       ),
     },

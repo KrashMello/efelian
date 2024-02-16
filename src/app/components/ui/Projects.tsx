@@ -19,12 +19,22 @@ const Projects = async () => {
     return v.name === "dotfile" ||
       v.name === "MAPANI-front" ||
       v.name === "MAPANI_back" ||
-      v.name === "krashmello.github.io"
+      v.name === "krashmello.github.io" ||
+      v.name === "KrashMello" ||
+      v.name === "efelian" ||
+      v.name === "trading-bot"
       ? false
       : true;
   });
   allRepoData = allRepoData.filter((v: any) => {
-    return v.name === "krashmello.github.io" ? false : true;
+    return v.name === "MAPANI-front" ||
+      v.name === "MAPANI_back" ||
+      v.name === "krashmello.github.io" ||
+      v.name === "KrashMello" ||
+      v.name === "efelian" ||
+      v.name === "trading-bot"
+      ? false
+      : true;
   });
 
   return (
@@ -94,6 +104,30 @@ const Projects = async () => {
         </h2>
       </div>
       <div className="flex max-w-[1920px] mx-auto flex-wrap gap-5 w-full">
+        <Article
+          title="Kia Landing"
+          href="https://kiateconecta.com/kiaSuscripcion"
+          description="Landing de suscripcion kia motors ecuador"
+          footer={[
+            // <EflTag title="HTML" key={crypto.randomUUID()} />,
+            <div
+              className="w-full flex text-slate-200 items-center justify-between gap-2.5 text-xs"
+              key={crypto.randomUUID()}
+            >
+              <div className="flex gap-2.5">
+                <span
+                  className={`bg-green-500 flex w-3 h-3 rounded-full`}
+                ></span>
+                <span className="font-bold text-zinc-600 dark:text-gray-100">
+                  vue
+                </span>
+              </div>
+              <span className="text-zinc-600 dark:text-gray-100">
+                <strong>last Update:</strong>2023-10-11
+              </span>
+            </div>,
+          ]}
+        />
         {allRepoData.map((repo: any) => {
           return (
             <>
@@ -137,30 +171,6 @@ const Projects = async () => {
             </>
           );
         })}
-        <Article
-          title="Kia Landing"
-          href="https://kiateconecta.com/kiaSuscripcion"
-          description="Landing de suscripcion kia motors ecuador"
-          footer={[
-            // <EflTag title="HTML" key={crypto.randomUUID()} />,
-            <div
-              className="w-full flex text-slate-200 items-center justify-between gap-2.5 text-xs"
-              key={crypto.randomUUID()}
-            >
-              <div className="flex gap-2.5">
-                <span
-                  className={`bg-green-500 flex w-3 h-3 rounded-full`}
-                ></span>
-                <span className="font-bold text-zinc-600 dark:text-gray-100">
-                  vue
-                </span>
-              </div>
-              <span className="text-zinc-600 dark:text-gray-100">
-                <strong>last Update:</strong>2023-10-11
-              </span>
-            </div>,
-          ]}
-        />
         <Footer />
       </div>
     </section>

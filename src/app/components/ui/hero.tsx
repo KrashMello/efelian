@@ -16,13 +16,13 @@ const Hero = () => {
         </div>
         <div className="w-full flex-col text-slate-600 dark:text-gray-100 justify-start items-center gap-6 flex">
           <h1 className="text-center text-4xl md:text-7xl font-medium">
-            !Hola mundo! yo soy Joel
+            ¡Hola mundo! yo soy Joel
             <br />
             un desarollador
           </h1>
           <p className="self-stretch text-center text-lg md:text-4xl font-normal leading-5 md:leading-10">
-            Me encanta trabajar en equipo, jugar en mis tiempos libres y
-            compartir mi conocimiento con los demás.
+            Me encanta trabajar en equipo, investigar sobre nuevas tegnologias
+            en mis tiempos libres y compartir mi conocimiento con los demás.
           </p>
         </div>
       </div>
