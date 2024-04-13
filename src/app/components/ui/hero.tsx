@@ -22,10 +22,10 @@ const Hero = () => {
           </h1>
           <p className="self-stretch  text-lg md:text-2xl text-pretty font-normal leading-5 md:leading-10">
             Una persona apasionada por el desarrollo web, y que busca siempre
-            dar lo mejor, me gusta ayudar en en crecimiento de las demas
-            personas sobre el ambito tegnologico repartiendo mi conocimiento a
-            ellas, en mis ratos libres veo videos, escucho musica y busco
-            informacion sobre las nuevas tegnologias y avances tegnologicos.
+            dar lo mejor, me gusta ayudar en el crecimiento de las demás
+            personas sobre el ámbito tecnológico repartiendo mi conocimiento a
+            ellas, en mis ratos libres veo videos, escuchar musica y busco
+            información sobre las nuevas tecnologías y avances tecnológicos.
           </p>
         </div>
       </div>
