@@ -50,6 +50,7 @@ const SwitchTheme = () => {
     <Button
       variant="light"
       className="text-[#5E81AC] dark:text-white"
+      aria-label="switch theme"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       isIconOnly
     >

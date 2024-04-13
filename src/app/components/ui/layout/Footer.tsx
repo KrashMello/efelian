@@ -8,6 +8,7 @@ const Footer = () => {
         <div className="w-full flex text-zinc-600 dark:text-white  justify-center gap-3 ">
           <a
             href="https://www.linkedin.com/in/joel-enrike-soteldo"
+            aria-label="linkedin"
             target="_blank"
           >
             <svg
@@ -23,7 +24,11 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="https://twitter.com/Krashmello" target="_blank">
+          <a
+            href="https://twitter.com/Krashmello"
+            aria-label="twitter"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -37,7 +42,11 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="https://www.instagram.com/krashmello/" target="_blank">
+          <a
+            href="https://www.instagram.com/krashmello/"
+            aria-label="instagram"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -51,7 +60,11 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="https://github.com/KrashMello" target="_blank">
+          <a
+            href="https://github.com/KrashMello"
+            aria-label="github"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

@@ -11,6 +11,7 @@ const Navbar = () => {
       <nav className="bg-opacity-50 backdrop-filter backdrop-blur-lg fixed inline-flex z-10 w-full h-24 p-4 border-b border-slate-600 justify-between items-center">
         <Link
           href="/"
+          aria-label="menu"
           scroll={false}
           className="h-11 justify-center items-center flex"
         >
@@ -42,13 +43,15 @@ const Navbar = () => {
                 />
               );
             })}
-            <a
-              className="font-semibold dark:border-white border-slate-900 hover:text-white border-2 px-4 rounded-lg dark:hover:bg-[#88C0D0] hover:bg-[#5E81AC]"
-              href="/Currículum vítae km.pdf"
-              download="Currículum vítae km.pdf"
-            >
-              Descargar CV
-            </a>
+            <li>
+              <a
+                className="font-semibold dark:border-white border-slate-900 hover:text-white border-2 px-4 rounded-lg dark:hover:bg-[#88C0D0] hover:bg-[#5E81AC]"
+                href="/Currículum vítae km.pdf"
+                download="Currículum vítae km.pdf"
+              >
+                Descargar CV
+              </a>
+            </li>
           </ul>
           <div className="block md:hidden">
             <NavDropdownMenu items={items} />

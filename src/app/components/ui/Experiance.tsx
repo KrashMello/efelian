@@ -6,7 +6,9 @@ const Experience = () => {
       title: (
         <>
           Alcaldía de Iribarren - Lara, Venezuela
-          <span className="text-sm text-gray-400">may 2022 - Actualidad</span>
+          <span className="text-sm text-gray-500 dark:text-gray-300">
+            may 2022 - Actualidad
+          </span>
         </>
       ),
       description: (
@@ -31,7 +33,9 @@ const Experience = () => {
       title: (
         <>
           Kia Motors Ecuador
-          <span className="text-sm text-gray-400">jul 2023 - nov 2023</span>
+          <span className="text-sm text-gray-500 dark:text-gray-300">
+            jul 2023 - nov 2023
+          </span>
         </>
       ),
       description: (
@@ -39,7 +43,7 @@ const Experience = () => {
           <li>
             Desarrollo landing page{" "}
             <a
-              className="text-[#5E81AC] dark:text-[#88C0D0] hover:underline underline-offset-4"
+              className="text-[#5E81AC] dark:text-[#88C0D0] font-semibold hover:underline underline-offset-4"
               href="https://kiateconecta.com/kiaSuscripcion"
             >
               kia te conecta
@@ -53,7 +57,9 @@ const Experience = () => {
       title: (
         <>
           Lácteos los Andes C.A - Lara, venezuela
-          <span className="text-sm text-gray-400">jul 2019 - feb 2021</span>
+          <span className="text-sm text-gray-500 dark:text-gray-300">
+            jul 2019 - feb 2021
+          </span>
         </>
       ),
       description: (
