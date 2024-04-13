@@ -12,19 +12,18 @@ const Experience = () => {
       description: (
         <ul className="list-disc flex flex-col gap-3">
           <li>
-            Desarrollo sistema integral multi modular donde se gestiona usuarios
-            y los bienes relacionados a todos los departamentos de la
-            institucion.
+            encargado del analisis y desarrollo del sistema de gestión de bienes
+            y responsabilidad por usuarios.
           </li>
           <li>
-            Diseño de interfaz usuario y base de datos del sistema de bienes
+            Diseño de la base de datos del sistema de gestión de bienes y
+            responsabilidad de usuarios.
           </li>
           <li>
-            Desarrollo del sistema de bienes usando las siguientes tegnologías
-            (postgreSQL, nuxtJS)
+            desarrollo fornt end del sistema de gestión de bienes y
+            responsabilidad de usuarios.
           </li>
-          <li>Integración de sistema multi modular</li>
-          <li>encargado del analisis y desarrollo del sistema.</li>
+          <li>Instructor de pasantes.</li>
         </ul>
       ),
     },
@@ -60,14 +59,17 @@ const Experience = () => {
       description: (
         <ul className="list-disc flex flex-col gap-3">
           <li>
-            Desarrollo sistema integral multi modular donde se gestiona los
-            usuarios y los distintos tramites del area consultoria juridica
+            encargado del analisis y desarrollo del sistema para distintos
+            tramites del area consultoria juridica.
           </li>
           <li>
-            Diseño de interfaz de usuario y base de datos del sistema usando las
-            siguientes tegnologías (Vue, postgreSQL, Laravel)
+            Diseño de la base de datos del sistema para distintos tramites del
+            area consultoria juridica.
           </li>
-          <li>encargado del analisis y desarrollo del sistema.</li>
+          <li>
+            desarrollo fornt end del sistema para distintos tramites del area
+            consultoria juridica.
+          </li>
         </ul>
       ),
     },
