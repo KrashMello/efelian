@@ -6,7 +6,7 @@ const Article = (props: any) => {
         target="_blank"
         className="group flex-grow basis-[200] w-full md:w-80  hover:transition hover:duration-200 hover:scale-100 ease-in"
       >
-        <article className="flex flex-wrap h-full w-full rounded-md hover:border-[#88C0D0] hover:border-2 hover:shadow-[#88C0D0] shadow px-6 md:px-12 py-6 dark:bg-gray-600 bg-slate-300 justify-start items-start gap-3">
+        <article className="flex flex-wrap h-full w-full rounded-md hover:drop-shadow-[0_7px_7px_rgba(94,129,172,0.25)] dark:hover:drop-shadow-[0_7px_7px_rgba(136,192,208,0.25)] drop-shadow px-6 md:px-12 py-6 dark:bg-gray-600 bg-slate-300 justify-start items-start gap-3">
           <header className="w-full flex flex-col  items-center gap-2.5">
             <h4 className="flex justify-between w-full font-semibold justify-self-start dark:text-[#D8DEE9] text-slate-500 text-lg md:text-xl">
               {props.title}
@@ -16,7 +16,7 @@ const Article = (props: any) => {
                   width="32"
                   height="32"
                   viewBox="0 0 256 256"
-                  className="w-5 hidden group-hover:block group-hover:animate-appearance-in group-hover:duration-200"
+                  className="w-5 h-5 hidden group-hover:block group-hover:animate-appearance-in group-hover:duration-200"
                 >
                   <path
                     fill="currentColor"
