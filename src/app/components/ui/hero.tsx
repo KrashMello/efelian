@@ -21,14 +21,11 @@ const Hero = () => {
             un desarollador
           </h1>
           <p className="self-stretch  text-lg md:text-2xl text-pretty font-normal leading-5 md:leading-10">
-            Generalista en el área de desarrollo web con más de 4 años de
-            experiencia en el área. Tengo un historial comprobado del uso de mis
-            destacadas habilidades personales, de comunicación y organización
-            para dirigir y mejorar los departamentos de Desarrollo web.
-            Trabajador en equipo con excelentes habilidades de comunicación,
-            alta calidad de trabajo, determinado y actualmente automotivado.
-            Poseo sólidas habilidades para el desempeñar mi trabajo, y soy capaz
-            de trabajar de forma independiente.
+            Una persona apasionada por el desarrollo web, y que busca siempre
+            dar lo mejor, me gusta ayudar en en crecimiento de las demas
+            personas sobre el ambito tegnologico repartiendo mi conocimiento a
+            ellas, en mis ratos libres veo videos, escucho musica y busco
+            informacion sobre las nuevas tegnologias y avances tegnologicos.
           </p>
         </div>
       </div>
