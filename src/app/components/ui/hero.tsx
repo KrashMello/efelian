@@ -17,8 +17,6 @@ const Hero = () => {
         <div className="w-full flex-col text-slate-600 dark:text-gray-100 justify-start items-center gap-6 flex">
           <h1 className="text-center text-4xl md:text-7xl font-medium">
             ¡Hola mundo! yo soy Joel
-            <br />
-            un desarollador
           </h1>
           <p className="self-stretch  text-lg md:text-2xl text-pretty font-normal leading-5 md:leading-10">
             Una persona apasionada por el desarrollo web, y que busca siempre
