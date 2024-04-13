@@ -42,6 +42,13 @@ const Navbar = () => {
                 />
               );
             })}
+            <a
+              className="font-semibold dark:border-white border-slate-900 hover:text-white border-2 px-4 rounded-lg dark:hover:bg-[#88C0D0] hover:bg-[#5E81AC]"
+              href="/Currículum vítae km.pdf"
+              download="Currículum vítae km.pdf"
+            >
+              Descargar CV
+            </a>
           </ul>
           <div className="block md:hidden">
             <NavDropdownMenu items={items} />
