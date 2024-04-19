@@ -8,7 +8,7 @@ const Article = (props: any) => {
       >
         <article className="flex flex-wrap h-full w-full rounded-md hover:drop-shadow-[0_7px_7px_rgba(94,129,172,0.25)] dark:hover:drop-shadow-[0_7px_7px_rgba(136,192,208,0.25)] drop-shadow px-6 md:px-12 py-6 dark:bg-gray-600 bg-slate-300 justify-start items-start gap-3">
           <header className="w-full flex flex-col  items-center gap-2.5">
-            <h4 className="flex justify-between w-full font-semibold justify-self-start dark:text-[#D8DEE9] text-slate-500 text-lg md:text-xl">
+            <h4 className="flex justify-between italic w-full font-semibold justify-self-start dark:text-[#D8DEE9] text-slate-500 text-lg md:text-xl">
               {props.title}
               <span>
                 <svg
