@@ -49,7 +49,7 @@ const Experience = () => {
               kia te conecta
             </a>
           </li>
-          <li>Encargado del desarrollo del sitio web de la landing</li>
+          <li>Encargado del desarrollo front end.</li>
         </ul>
       ),
     },
