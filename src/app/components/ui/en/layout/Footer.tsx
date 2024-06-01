@@ -1,4 +1,4 @@
-import LogoLarge from "../../logoLarge";
+import LogoLarge from "../../../logoLarge";
 
 const Footer = () => {
   return (
