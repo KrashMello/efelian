@@ -5,8 +5,9 @@ import Hero from "./components/ui/hero";
 
 export const metadata: Metadata = {
   title: process.env.TITLE_PAGE + " | portafolio",
-  description: "Breve reseña de quien es KrashMello y lo que hace.",
-  icons: "/favicon.ico",
+  description:
+    "¡Hola mundo! Soy Joel Una persona apasionada por el desarrollo web que busca siempre dar lo mejor. Me gusta ayudar en el crecimiento de las demás en el ámbito tecnológico, compartiendo mi conocimiento. En mis ratos libres disfruto de ver videos, escuchar musica y buscar información sobre las nuevas tecnologías y avances.",
+  icons: "/favicon.ico ",
 };
 
 const Home = () => {
