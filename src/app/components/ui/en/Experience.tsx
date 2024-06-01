@@ -69,7 +69,7 @@ const Experience = () => {
             different procedures of the legal consulting area.
           </li>
           <li>
-            Design of the system's database for different procedures of the
+            Design of the system&#39;s database for different procedures of the
             legal consulting area.
           </li>
           <li>

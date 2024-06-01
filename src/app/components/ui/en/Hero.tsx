@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
         <div className="w-full flex-col text-slate-600 dark:text-gray-100 justify-start items-center gap-6 flex">
           <h1 className="text-center text-4xl md:text-7xl font-medium">
-            ¡Hello world! I'm Joel
+            ¡Hello world! I&#39;m Joel
           </h1>
           <p className="self-stretch text-center text-lg md:text-2xl font-normal leading-5 md:leading-10">
             A person passionate about web development that always seeks to give
