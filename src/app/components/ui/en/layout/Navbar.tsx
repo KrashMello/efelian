@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import NavDropdownMenu from "../../NavDropdownMenu";
-import SwitchTheme from "../../SwitchTheme";
-import NavBtn from "./NavBtn";
-import SelectLanguage from "../../SelectLanguage";
+import NavDropdownMenu from "../../../NavDropdownMenu";
+import SwitchTheme from "../../../SwitchTheme";
+import NavBtn from "../../layout/NavBtn";
+import SelectLanguage from "@/app/components/SelectLanguage";
 
 const Navbar = () => {
   return (
@@ -51,11 +51,11 @@ const Navbar = () => {
                   href="/Currículum vítae km.pdf"
                   download="Currículum vítae km.pdf"
                 >
-                  Descargar CV
+                  Download CV
                 </a>
               </li>
               <li>
-                <SelectLanguage lang="ES" />
+                <SelectLanguage lang="EN" />
               </li>
             </ul>
             <div className="block md:hidden">
@@ -70,18 +70,18 @@ const Navbar = () => {
 
 const items = [
   {
-    key: "Inicio",
-    title: "Inicio",
+    key: "Home",
+    title: "Home",
     to: "/#me",
   },
   {
     key: "Experience",
-    title: "Experiencia",
+    title: "Experience",
     to: "/#experience",
   },
   {
     key: "projects",
-    title: "Proyectos",
+    title: "Projects",
     to: "/#projects",
   },
 ];
