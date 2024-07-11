@@ -48,8 +48,8 @@ const Navbar = () => {
               <li>
                 <a
                   className="font-semibold dark:border-white border-slate-900 hover:text-white border-2 px-4 rounded-lg dark:hover:bg-[#88C0D0] hover:bg-[#5E81AC]"
-                  href="/CV_Joel_Soteldo_Developer_Julio.pdf"
-                  download="CV_Joel_Soteldo_Developer_Julio.pdf"
+                  href="/CV_Joel_Soteldo_Developer_Julio_2024.pdf"
+                  download="CV_Joel_Soteldo_Developer_Julio_2024.pdf"
                 >
                   Download CV
                 </a>
