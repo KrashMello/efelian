@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "title": "¡Hola mundo! Soy Joel",
+    "description": "Una persona apasionada por el desarrollo web que busca siempre dar lo mejor. Me gusta ayudar en el crecimiento de las demás en el ámbito tecnológico, compartiendo mi conocimiento. En mis ratos libres disfruto de ver videos, escuchar musica y buscar información sobre las nuevas tecnologías y avances."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "list": [
+      {
+        "name": "Alcaldía de Iribarren",
+        "zone": "Lara, Venezuela",
+        "dateBegin": "May 2022",
+        "dateEnd": "Actualidad",
+        "task": [
+          "encargado del analisis y desarrollo del sistema de gestión de bienes y responsabilidad por usuarios.",
+          "Diseño de la base de datos del sistema de gestión de bienes y responsabilidad de usuarios.",
+          "desarrollo fornt end del sistema de gestión de bienes y responsabilidad de usuarios.",
+          "Instructor de pasantes."
+        ]
+      },
+      {
+        "name": "Kia Motors",
+        "zone": "Ecuador",
+        "dateBegin": "Jul 2023",
+        "dateEnd": "Nov 2023",
+        "task": [
+          "Desarrollo landing page kia te conecta",
+          "Encargado del desarrollo front end."
+        ]
+      },
+      {
+        "name": "Lácteos los Andes C.A",
+        "zone": "Lara, Venezuela",
+        "dateBegin": "Jul 2019",
+        "dateEnd": "Feb 2021",
+        "task": [
+          "encargado del analisis y desarrollo del sistema para distintos tramites del area consultoria juridica.",
+          "Diseño de la base de datos del sistema para distintos tramites del area consultoria juridica.",
+          "desarrollo fornt end del sistema para distintos tramites del area consultoria juridica."
+        ]
+      }
+    ]
+  }
+}
