@@ -17,7 +17,7 @@ const Home = () => {
   const cookieStore = cookies();
   const lang = cookieStore.get("lang")?.value ?? "es";
   const filePath = path.join(process.cwd(), "src/app", `${lang}.json`);
-  const jsonData = fs.readFileSync(filePath);
+  const jsonData: any = fs.readFileSync(filePath);
   const data = JSON.parse(jsonData);
   return (
     <>
