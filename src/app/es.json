@@ -12,10 +12,10 @@
         "dateBegin": "May 2022",
         "dateEnd": "Actualidad",
         "task": [
-          "encargado del analisis y desarrollo del sistema de gestión de bienes y responsabilidad por usuarios.",
-          "Diseño de la base de datos del sistema de gestión de bienes y responsabilidad de usuarios.",
-          "desarrollo fornt end del sistema de gestión de bienes y responsabilidad de usuarios.",
-          "Instructor de pasantes."
+          "Implementar prácticas de workflow utilizando Git para gestionar las versiones de los sistemas, mejorando la productividad y el control de los mismos en un 100%.",
+          "Lidere el desarrollo del Sistema de responsabilidad por usuario, mejorando la automatización de la gestión para la revisión de los bienes y el gasto de papel en un 70%, utilizando las siguientes herramientas PostgreSQL para gestionar la base de datos y poder esquematizar la información y creación de procedimientos almacenados y vistas, haciéndola menos vulnerable, Nestjs para gestionar el microservicio back-end  y Nuxtjs gestiona el comportamiento y funcionalidad visual del sistema.",
+          "Desarrolle la bitácora a la base de datos con operadores triggers mejorando un 100% la monitorización y auditoria del sistema.",
+          "Implementación metodología scrum para el desarrollo del sistema."
         ]
       },
       {
@@ -24,8 +24,8 @@
         "dateBegin": "Jul 2023",
         "dateEnd": "Nov 2023",
         "task": [
-          "Desarrollo landing page kia te conecta",
-          "Encargado del desarrollo front end."
+          "Desarrolle la funcionalidad de los componentes visuales.",
+          "Lidere el desarrollo de la landing page de ventas de autos llegando a alcanzar una mejora en las ventas de un 80%."
         ]
       },
       {
@@ -34,9 +34,9 @@
         "dateBegin": "Jul 2019",
         "dateEnd": "Feb 2021",
         "task": [
-          "encargado del analisis y desarrollo del sistema para distintos tramites del area consultoria juridica.",
-          "Diseño de la base de datos del sistema para distintos tramites del area consultoria juridica.",
-          "desarrollo fornt end del sistema para distintos tramites del area consultoria juridica."
+          "Implementar prácticas de workflow utilizando Git para gestionar las versiones de los sistemas, mejorando la productividad y el control de los mismos en un 100%.",
+          "Lidere el desarrollo del Sistema de responsabilidad por usuario, mejorando la automatización de la gestión para la revisión de los bienes y el gasto de papel en un 70%, utilizando las siguientes herramientas PostgreSQL para gestionar la base de datos y poder esquematizar la información y creación de procedimientos almacenados y vistas, haciéndola menos vulnerable, Laravel para gestionar el back-end y front-end.",
+          "Implementé el framework Vue para la gestión de comportamientos de los componentes visuales"
         ]
       }
     ]

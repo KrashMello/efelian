@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Experience from "./components/ui/Experiance";
 import Projects from "./components/ui/Projects";
 import Hero from "./components/ui/hero";
+import fs from "fs";
+import path from "path";
+import { cookies } from "next/headers";
 
 export const metadata: Metadata = {
   title: process.env.TITLE_PAGE + " | portafolio",
@@ -11,10 +14,15 @@ export const metadata: Metadata = {
 };
 
 const Home = () => {
+  const cookieStore = cookies();
+  const lang = cookieStore.get("lang")?.value ?? "es";
+  const filePath = path.join(process.cwd(), "src/app", `${lang}.json`);
+  const jsonData = fs.readFileSync(filePath);
+  const data = JSON.parse(jsonData);
   return (
     <>
-      <Hero />
-      <Experience />
+      <Hero data={data.hero} />
+      <Experience data={data.experience} />
       <Projects />
     </>
   );

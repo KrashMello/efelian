@@ -1,4 +1,18 @@
-const SelectLanguage = ({ lang }: { lang: string }) => {
+"use client";
+import { getCookie, setCookie } from "cookies-next";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+const SelectLanguage = () => {
+  const router = useRouter();
+  function handleLang(selectedLang: string) {
+    setLang(selectedLang);
+    setCookie("lang", selectedLang);
+    router.push("/");
+  }
+  const [lang, setLang] = useState<any>("ES");
+  useEffect(() => {
+    setLang(getCookie("lang") || "es");
+  });
   return (
     <div className="group/select relative">
       <input
@@ -8,10 +22,10 @@ const SelectLanguage = ({ lang }: { lang: string }) => {
       />
       <ul className="hidden group-focus-within/select:flex flex-col absolute  gap-1 top-6 font-bold">
         <li className="hover:bg-slate-500 hover:text-white px-1">
-          <a href="/">ES</a>
+          <button onClick={() => handleLang("es")}>ES</button>
         </li>
         <li className="hover:bg-slate-500 hover:text-white px-1">
-          <a href="/en">EN</a>
+          <button onClick={() => handleLang("en")}>EN</button>
         </li>
       </ul>
     </div>

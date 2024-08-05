@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className}  bg-slate-200 dark:bg-slate-800`}>
         <Providers>
           <div className="min-h-screen flex flex-col">
-            <header className="w-full h-fit">
+            <header className="h-fit">
               <Navbar />
             </header>
             <main className=" h-screen relative w-full overflow-auto">
