@@ -26,7 +26,7 @@ const Experience = ({ data }: any) => {
       </header>
       <div className="w-full mx-auto max-w-[1920px]">
         <dl className="text-slate-500 dark:text-white flex flex-wrap gap-12 justify-center w-full">
-          {data.list.map((item) => {
+          {data.list.map((item: any) => {
             return (
               <DescriptionItem
                 key={crypto.randomUUID()}
@@ -41,8 +41,8 @@ const Experience = ({ data }: any) => {
                 description={
                   <>
                     <ul className="list-disc flex flex-col gap-3">
-                      {item.task.map((task) => {
-                        return <li>{task}</li>;
+                      {item.task.map((task: any) => {
+                        return <li key={crypto.randomUUID()}>{task}</li>;
                       })}
                     </ul>
                   </>
