@@ -3,16 +3,14 @@ import { getCookie, setCookie } from "cookies-next";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 const SelectLanguage = () => {
+  const [lang, setLang] = useState<any>("ES");
   const router = useRouter();
   function handleLang(selectedLang: string) {
     setLang(selectedLang);
     setCookie("lang", selectedLang);
     router.push("/");
   }
-  const [lang, setLang] = useState<any>("ES");
-  useEffect(() => {
-    setLang(getCookie("lang") || "es");
-  });
+  setLang(getCookie("lang") || "es");
   return (
     <div className="group/select relative">
       <input
