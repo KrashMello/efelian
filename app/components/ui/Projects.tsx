@@ -53,45 +53,43 @@ const Projects = async () => {
       <div className="flex flex-wrap gap-5 max-w-[1920px] w-full mx-auto">
         {repoData.map((repo: any) => {
           return (
-            <>
-              <Article
-                key={repo.id}
-                title={repo.name}
-                href={repo.homepage !== "" ? repo.homepage : repo.html_url}
-                description={repo.description}
-                footer={[
-                  // <EflTag title="HTML" key={crypto.randomUUID()} />,
-                  <div
-                    className="w-full flex text-slate-200 items-center justify-between gap-2.5 text-xs"
-                    key={crypto.randomUUID()}
-                  >
-                    <div className="flex gap-2.5">
-                      <span
-                        className={`${
-                          repo.language == "TypeScript"
-                            ? "bg-blue-700"
-                            : repo.language === "Vue"
-                              ? "bg-green-500"
-                              : repo.language === "HTML"
-                                ? "bg-orange-500"
-                                : "bg-yellow-400"
-                        } flex w-3 h-3 rounded-full`}
-                      ></span>
-                      <span className="font-bold text-zinc-600 dark:text-gray-100">
-                        {repo.language}
-                      </span>
-                    </div>
-                    <span className="text-zinc-600 dark:text-gray-100">
-                      <strong>last Update:</strong>{" "}
-                      {repo.updated_at.replace(
-                        /(T[0-9]{2}:[0-9]{2}:[0-9]{2}Z)/g,
-                        "",
-                      )}
+            <Article
+              key={repo.id}
+              title={repo.name}
+              href={repo.homepage !== "" ? repo.homepage : repo.html_url}
+              description={repo.description}
+              footer={[
+                // <EflTag title="HTML" key={crypto.randomUUID()} />,
+                <div
+                  className="w-full flex text-slate-200 items-center justify-between gap-2.5 text-xs"
+                  key={crypto.randomUUID()}
+                >
+                  <div className="flex gap-2.5">
+                    <span
+                      className={`${
+                        repo.language == "TypeScript"
+                          ? "bg-blue-700"
+                          : repo.language === "Vue"
+                            ? "bg-green-500"
+                            : repo.language === "HTML"
+                              ? "bg-orange-500"
+                              : "bg-yellow-400"
+                      } flex w-3 h-3 rounded-full`}
+                    ></span>
+                    <span className="font-bold text-zinc-600 dark:text-gray-100">
+                      {repo.language}
                     </span>
-                  </div>,
-                ]}
-              />
-            </>
+                  </div>
+                  <span className="text-zinc-600 dark:text-gray-100">
+                    <strong>last Update:</strong>{" "}
+                    {repo.updated_at.replace(
+                      /(T[0-9]{2}:[0-9]{2}:[0-9]{2}Z)/g,
+                      "",
+                    )}
+                  </span>
+                </div>,
+              ]}
+            />
           );
         })}
       </div>
