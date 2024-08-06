@@ -45,7 +45,7 @@ const Navbar = () => {
                   />
                 );
               })}
-              <li>
+              <li key={crypto.randomUUID()}>
                 <SelectLanguage />
               </li>
             </ul>

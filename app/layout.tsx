@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es-VE" className="scroll-smooth">
+    <html lang="es-VE">
       <body className={`${inter.className}  bg-slate-200 dark:bg-slate-800`}>
         <Providers>
           <div className="min-h-screen flex flex-col">

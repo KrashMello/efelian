@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Experience from "./components/ui/Experiance";
-import Projects from "./components/ui/Projects";
-import Hero from "./components/ui/hero";
+import Experience from "@/app/components/ui/Experiance";
+import Projects from "@/app/components/ui/Projects";
+import Hero from "@/app/components/ui/hero";
 import fs from "fs";
 import path from "path";
 import { cookies } from "next/headers";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const Home = () => {
   const cookieStore = cookies();
   const lang = cookieStore.get("lang")?.value ?? "es";
-  const filePath = path.join(process.cwd(), "src/app", `${lang}.json`);
+  const filePath = path.join(process.cwd(), "/app", `${lang}.json`);
   const jsonData: any = fs.readFileSync(filePath);
   const data = JSON.parse(jsonData);
   return (
