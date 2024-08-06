@@ -14,7 +14,7 @@ const SelectLanguage = () => {
   const handleLang = (selectedLang: string) => {
     setLang(selectedLang);
     setCookie("lang", selectedLang);
-    router.push("/");
+    router.replace("/");
   };
   return (
     <div className="group/select relative">
